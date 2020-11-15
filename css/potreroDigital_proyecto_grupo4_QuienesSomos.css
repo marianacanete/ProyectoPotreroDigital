@@ -1,0 +1,383 @@
+/************************************QUIENES SOMOS************************************/
+
+/************* mobile first ******************/
+@media only screen and (max-width: 600px) {
+
+.containerQuienesSomos {
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    height: 5%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/** Presentacion **/
+
+.presentacion {
+	justify-content: space-around;
+    align-items: center;
+	width: 70%;
+	height: 90%;
+}
+
+/* titulo */
+
+#titulo {
+    flex-direction: row;
+    font-size: 1.3em;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#titulo::after, #titulo::before{
+    flex-grow: 1;
+    height: 1px;
+    content: '\a0';
+    background-color: #cccccc;
+    position: relative;
+    top: 0.5em;
+}
+
+#titulo::before{
+    margin-right: 10px;
+}
+
+#titulo::after{
+    margin-left: 10px;
+}
+
+/* texto */
+
+.presentacion p {
+	text-align: justify;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+p:first-of-type {
+	font-weight: bold;
+	align-items: center;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+}
+
+/**Fotos**/
+
+#fotosGrupo {
+    border: solid 1px #D3D3D3;
+  	align-items: center;
+    width: 60%;
+    margin: 30px 0;
+    padding: 15px 10px;
+}
+
+#fotosGrupo h3 {
+	font-size: 1.3em;
+	font-family: 'Nunito', sans-serif;
+}
+
+#fotosGrupo div > img{
+	height: auto;
+	width:100%;
+	margin-bottom: 15px;
+}
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/**************** dispositivos pequeños **************************/
+
+@media only screen and (min-width: 600px) {
+
+.containerQuienesSomos {
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    height: 5%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/** Presentacion **/
+
+.presentacion {
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+}
+
+/* titulo */
+
+#titulo {
+    flex-direction: row;
+    font-size: 1.3em;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#titulo::after, #titulo::before{
+    flex-grow: 1;
+    height: 1px;
+    content: '\a0';
+    background-color: #cccccc;
+    position: relative;
+    top: 0.5em;
+}
+
+#titulo::before{
+    margin-right: 10px;
+}
+
+#titulo::after{
+    margin-left: 10px;
+}
+
+/* texto */
+
+.presentacion p {
+    text-align: justify;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+p:first-of-type {
+    font-weight: bold;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+/**Fotos**/
+
+#fotosGrupo {
+    border: solid 1px #D3D3D3;
+    align-items: center;
+    width: 60%;
+    margin: 30px 0;
+    padding: 15px 10px;
+}
+
+#fotosGrupo h3 {
+    font-size: 1.3em;
+    font-family: 'Nunito', sans-serif;
+}
+
+#fotosGrupo div > img{
+    height: auto;
+    width:100%;
+    margin-bottom: 15px;
+}
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/***************************** tabletas **************************/
+@media (min-width: 768px) {
+
+/* texto */
+
+.presentacion p {
+	font-size: 0.9em;
+}
+
+p:first-of-type {
+	font-weight: bold;
+	align-items: center;
+}
+
+	/**Fotos**/
+
+#fotosGrupo {
+    border: solid 1px #D3D3D3;
+  	align-items: center;
+    width: 45%;
+    margin: 30px 0;
+    padding: 15px 10px;
+}
+
+#fotosGrupo h3 {
+	font-size: 1.3em;
+	font-family: 'Nunito', sans-serif;
+}
+
+#fotosGrupo div > img{
+	height: auto;
+	width:100%;
+	margin-bottom: 15px;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/************************ escritorio normales ********************/
+@media (min-width: 992px) {
+
+/* Presentacion */
+
+.presentacion {
+	width: 70%;
+}
+
+/* titulo */
+
+#titulo {
+	margin: 30px 0;
+	font-size: 1.5em;
+}
+
+/* texto */
+
+.presentacion p {
+	font-size: 1em;
+}
+
+p:first-of-type {
+	font-weight: bold;
+	align-items: center;
+}
+
+
+/**Fotos**/
+
+#fotosGrupo {
+    border: solid 1px #D3D3D3;
+  	align-items: center;
+    width: 40%;
+    margin: 30px 0;
+    padding: 15px 10px;
+}
+
+#fotosGrupo h3 {
+	font-size: 1.3em;
+	font-family: 'Nunito', sans-serif;
+}
+
+#fotosGrupo div > img{
+	height: 100%;
+	width:100%;
+	margin-bottom: 15px;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/******************** pantallas grandes **************************/
+@media (min-width: 1200px) { 
+
+/* Presentacion */
+
+.presentacion {
+	width: 70%;
+}
+
+/* titulo */
+
+#titulo {
+	margin: 30px 0;
+	font-size: 2em;
+}
+
+/* texto */
+
+.presentacion p {
+	font-size: 1em;
+}
+
+p:first-of-type {
+	font-weight: bold;
+	align-items: center;
+}
+
+/**Fotos**/
+
+#fotosGrupo {
+    border: solid 1px #D3D3D3;
+  	align-items: center;
+    width: 30%;
+    margin: 30px 0;
+    padding: 15px 10px;
+}
+
+#fotosGrupo h3 {
+	font-size: 1.3em;
+	font-family: 'Nunito', sans-serif;
+}
+
+#fotosGrupo div > img{
+	height:100%;
+	width:100%;
+	margin-bottom: 15px;
+}
+
+
+}
+
+
+
+
+

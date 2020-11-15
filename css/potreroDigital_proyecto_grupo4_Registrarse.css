@@ -1,0 +1,419 @@
+/************************************REGISTRARSE************************************/
+
+/************* mobile first ******************/
+@media only screen and (max-width: 600px) {
+
+.containerRegistrarse{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #DCDCDC;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.containerRegistrarse h3 {
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*Formulario*/
+
+.formularioReg{
+    align-items:flex-start;
+    width: 100%;
+    padding:0 3%;
+}
+
+.formularioReg label {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.campoReg{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.direccionReg{
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: row;
+}
+
+#campo1{
+  width: 70%;
+  align-items: flex-start;
+  margin-left: 1;
+}
+
+#campo2{
+  width: 30%;
+  align-items: flex-start;
+  margin-left: 1%;
+}
+
+/*Terminos y Notificaciones*/
+
+.divTerminosNotif{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.divTerminosNotif h5 {
+    flex-direction: row;
+    font-size: 0.7em;
+    color: #000000;
+    margin: 0 15px; 
+}
+
+h5 a {
+    padding: 0 2px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.divCheck {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divCheck label {
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.divCheck2 {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divCheck2 label {
+    font-size: 13px;
+}
+
+hr {
+    width: 80%;
+    align-self: center;
+    margin: 0;
+}
+
+/*Boton Registrarse*/
+.botonRegistrarse{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#btnRegistro{
+    height: 33px;
+    justify-content: center;
+    color: #f7f7f7;
+    background-color: #11cbd7;
+    border-radius: 6px;
+    font-weight: bold;
+    border:none;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+/*Inicia Sesion*/
+
+.inicioSesion {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.inicioSesion a {
+    margin-left: 10px;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/**************** dispositivos pequeños **************************/
+
+@media only screen and (min-width: 600px) {
+
+.containerRegistrarse{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #DCDCDC;
+    height: 100%;
+    width: 65%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.containerRegistrarse h3 {
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*Formulario*/
+
+.formularioReg{
+    align-items:flex-start;
+    width: 100%;
+    padding:0 3%;
+}
+
+.formularioReg label {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.campoReg{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.direccionReg{
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: row;
+}
+
+#campo1{
+  width: 70%;
+  align-items: flex-start;
+  margin-left: 1;
+}
+
+#campo2{
+  width: 30%;
+  align-items: flex-start;
+  margin-left: 1%;
+}
+
+/*Terminos y Notificaciones*/
+
+.divTerminosNotif{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.divTerminosNotif h5 {
+    flex-direction: row;
+    font-size: 0.7em;
+    color: #000000;
+    margin: 0 15px; 
+}
+
+h5 a {
+    padding: 0 2px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.divCheck {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divCheck label {
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.divCheck2 {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divCheck2 label {
+    font-size: 13px;
+}
+
+hr {
+    width: 80%;
+    align-self: center;
+    margin: 0;
+}
+
+/*Boton Registrarse*/
+.botonRegistrarse{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#btnRegistro{
+    height: 33px;
+    justify-content: center;
+    color: #f7f7f7;
+    background-color: #11cbd7;
+    border-radius: 6px;
+    font-weight: bold;
+    border:none;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+/*Inicia Sesion*/
+
+.inicioSesion {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.inicioSesion a {
+    margin-left: 10px;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/***************************** tabletas **************************/
+@media (min-width: 768px) {
+
+.containerRegistrarse{
+    width: 60%;
+}
+
+/*Formulario*/
+
+.formularioReg label {
+    font-size: 1em;
+}
+
+
+/*Terminos y Notificaciones*/
+
+.divTerminosNotif h5 {
+    font-size: 13px;
+}
+
+h5 a {
+    font-size: 13px;
+}
+
+/*Boton Registrarse*/
+
+#btnRegistro{
+    height:35px;
+    font-size: 1em;
+}
+
+/*Inicia Sesion*/
+
+.inicioSesion {
+    margin: 20px 0;
+}
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/************************ escritorio normales ********************/
+@media (min-width: 992px) {
+
+.containerRegistrarse{
+    width: 55%;
+}
+
+/*Formulario*/
+
+.formularioReg label {
+    font-size: 1em;
+}
+
+
+/*Terminos y Notificaciones*/
+
+.divTerminosNotif h5 {
+    font-size: 13px;
+}
+
+h5 a {
+    font-size: 13px;
+}
+
+/*Boton Registrarse*/
+
+#btnRegistro{
+    height:35px;
+    font-size: 1em;
+}
+
+/*Inicia Sesion*/
+
+.inicioSesion {
+    margin: 20px 0;
+}
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/******************** pantallas grandes **************************/
+@media (min-width: 1200px) {
+
+.containerRegistrarse{
+    width: 50%;
+}
+
+/*Formulario*/
+
+.formularioReg label {
+    font-size: 1em;
+}
+
+
+/*Terminos y Notificaciones*/
+
+.divTerminosNotif h5 {
+    font-size: 13px;
+}
+
+h5 a {
+    font-size: 13px;
+}
+
+/*Boton Registrarse*/
+
+#btnRegistro{
+    height:35px;
+    font-size: 1em;
+}
+
+/*Inicia Sesion*/
+
+.inicioSesion {
+    margin: 20px 0;
+}
+
+}
+

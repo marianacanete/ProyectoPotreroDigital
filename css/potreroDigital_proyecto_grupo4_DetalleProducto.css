@@ -1,0 +1,135 @@
+
+/************************************DETALLE PRODUCTO************************************/
+
+/************* mobile first ******************/
+
+.contenedorDetalleProducto {
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.divProducto {
+    justify-content: space-around;
+    width: 70%;
+    height: 90%;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Detalle Producto*/
+
+.detalleProducto {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 45%;
+    width:90%;
+    margin: 70px 0 50px 0;
+}
+
+/*Imagen del producto*/
+
+.imagenesProducto {
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    border-right: 1px solid #dedede;
+}
+
+.imagenesProducto img {
+    height: 70%;
+    width: 50%;
+}
+
+.imagenesProducto img {
+    -webkit-transition:all 1s ease; 
+    -ms-transition:all 1s ease; 
+
+}
+
+.imagenesProducto:hover img {
+    -webkit-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+/*Datos del producto*/
+
+.datosProducto {
+    justify-content: space-around;
+    width: 40%;
+    padding: 15px;
+}
+
+.nombrePrecio {
+    height: 40%;
+    justify-content: space-around;
+ }
+
+ .nombrePrecio h5{
+    font-weight: bold;
+ }
+
+.formCantidad {
+    width: 20%;
+    height: 20%;
+}
+
+.botonCarrito {
+    height: 30%;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.botonCarrito form {
+    background-color: #11cbd7;
+    border-radius: 6px;
+    align-items: center;
+    align-self: center;
+    padding: 7px;
+    width: 80%;
+}
+
+.botonCarrito input {
+    border:none;
+    background-color: #11cbd7;
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+/*Descripcion del producto*/
+
+.descripcionProducto {
+    height: 38%;
+    font-size: 14px;
+    margin:40px 0;
+}
+
+}
+

@@ -1,0 +1,700 @@
+/************************************INDEX************************************/
+
+/************* mobile first ******************/
+@media only screen and (max-width: 600px) {
+
+/****main****/
+
+.contenedorIndex {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contenedorIndex h3 {
+    justify-content: center;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+.galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.galeriaResponsive {
+    display: block;
+}
+
+/*carousel*/
+
+#indexCarousel {
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.imagenCarousel {
+    width: 100%;
+    height: auto;
+}
+
+.indicador {
+    flex-direction: row;
+}
+
+/*destacados*/
+
+#indexDestacados {
+    background-color: #D3D3D3;
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.divDestacadosNormal {
+    display: none;
+}
+
+#carouselDestacados {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.divDestacados {
+    background-color: #696969;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.divDestacados:hover {
+    background-color: #fa4659;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.divDestacados a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+.divDestacados img {
+    width: 100%;
+    height: auto;
+}
+
+/*promociones*/
+
+#indexPromociones {
+    background-color: #D3D3D3;
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.divPromociones {
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height:30%;
+    margin: 3px;
+}
+
+.divPromociones a {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.divPromociones img {
+    width: 100%;
+    height: auto;
+    border: 2px dotted #000000;
+}
+
+.ampliar:hover{
+    transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -ms-transform:scale(1.2,1.2);
+}
+
+/*pagos*/
+#indexPagosEnvios {
+    background-color: #D3D3D3;
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.divPagosEnvios {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 150px;
+    height:30%;
+}
+
+.divPagosEnvios img {
+    width: 100%;
+    height: auto;
+}
+
+.rotate:hover{
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/**************** dispositivos pequeños **************************/
+
+@media only screen and (min-width: 600px) {
+
+/****main****/
+
+.contenedorIndex {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contenedorIndex h3 {
+    justify-content: center;
+    font-size: 1.3em;
+    padding: 10px 0;
+}
+
+.galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.galeriaResponsive {
+    display: block;
+}
+
+/*carousel*/
+
+#indexCarousel {
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.imagenCarousel {
+    width: 100%;
+    height: auto;
+}
+
+.indicador {
+    flex-direction: row;
+}
+
+/*destacados*/
+
+#indexDestacados {
+    background-color: #D3D3D3;
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.divDestacadosNormal {
+    display: none;
+}
+
+#carouselDestacados {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.divDestacados {
+    background-color: #696969;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.divDestacados:hover {
+    background-color: #fa4659;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.divDestacados a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+.divDestacados img {
+    width: 100%;
+    height: auto;
+}
+
+/*promociones*/
+
+#indexPromociones {
+    background-color: #D3D3D3;
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.divPromociones {
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height:30%;
+    margin: 3px;
+}
+
+.divPromociones a {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.divPromociones img {
+    width: 100%;
+    height: auto;
+    border: 3px dotted #000000;
+}
+
+.ampliar:hover{
+    transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -ms-transform:scale(1.2,1.2);
+}
+
+/*pagos*/
+#indexPagosEnvios {
+    background-color: #D3D3D3;
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.divPagosEnvios {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 150px;
+    height:30%;
+}
+
+.divPagosEnvios img {
+    width: 100%;
+    height: auto;
+}
+
+.rotate:hover{
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/***************************** tabletas **************************/
+@media (min-width: 768px) {
+
+.contenedorIndex h3 {
+    font-size: 1.5em;
+}
+
+.galeria {   
+    flex-wrap: nowrap;
+}
+
+.galeriaResponsive {
+    display: none;
+}
+
+/*destacados*/
+
+#indexDestacados {
+    width: 80%;
+}
+
+#carouselDestacados {
+   display: none;
+}
+
+.divDestacadosNormal {
+    display: flex;
+    background-color: #696969;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin: 15px;
+}
+
+.divDestacadosNormal:hover {
+    background-color: #fa4659;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.divDestacadosNormal a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.divDestacadosNormal img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*promociones*/
+#indexPromociones {
+    background-color: #D3D3D3;
+    height: 25%;
+    width: 80%;
+}
+
+.divPromociones {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    height:100%;
+}
+
+.divPromociones a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.divPromociones img {
+    width: 100%;
+    height: 100%;
+    border: 4px dotted #000000;
+}
+
+.ampliar:hover{
+    transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -ms-transform:scale(1.2,1.2);
+}
+
+/*pagos*/
+
+#indexPagosEnvios {
+    background-color: #D3D3D3;
+    height: 20%;
+    width: 80%;
+}
+
+.divPagosEnvios {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+.divPagosEnvios img {
+    width: 70%;
+    height: 100%;
+}
+
+.rotate:hover{
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/************************ escritorio normales ********************/
+@media (min-width: 992px) {
+
+/****main****/
+
+.contenedorIndex h3 {
+    font-size: 1.6em;
+}
+
+/*carousel*/
+
+.imagenCarousel {
+    width: auto;
+    height: 400px;
+}
+
+/*destacados*/
+
+#indexDestacados {
+    width: 75%;
+}
+
+#carouselDestacados {
+   display: none;
+}
+
+.divDestacadosNormal {
+    display: flex;
+    background-color: #696969;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin: 15px;
+}
+
+.divDestacadosNormal:hover {
+    background-color: #fa4659;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.divDestacadosNormal a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.divDestacadosNormal img {
+    width: 100%;
+    height: 100%;
+}
+
+/*promociones*/
+
+#indexPromociones {
+    background-color: #D3D3D3;
+    height: 25%;
+    width: 75%;
+}
+
+.divPromociones {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    height:100%;
+}
+
+.divPromociones a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.divPromociones img {
+    width: 100%;
+    height: 100%;
+    border: 5px dotted #000000;
+}
+
+.ampliar:hover{
+    transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -ms-transform:scale(1.2,1.2);
+}
+
+/*pagos*/
+
+#indexPagosEnvios {
+    background-color: #D3D3D3;
+    height: 20%;
+    width: 75%;
+}
+
+.divPagosEnvios {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+.divPagosEnvios img {
+    width: 70%;
+    height: 100%;
+}
+
+.rotate:hover{
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/******************** pantallas grandes **************************/
+@media (min-width: 1200px) {
+
+/****main****/
+
+.contenedorIndex h3 {
+    font-size: 1.7em;
+}
+
+
+/*carousel*/
+
+.imagenCarousel {
+    width: auto;
+    height: 400px;
+}
+
+/*destacados*/
+
+#indexDestacados {
+    width: 70%;
+}
+
+#carouselDestacados {
+   display: none;
+}
+
+.divDestacadosNormal {
+    display: flex;
+    background-color: #696969;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin: 15px;
+}
+
+.divDestacadosNormal:hover {
+    background-color: #fa4659;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.divDestacadosNormal a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.divDestacadosNormal img {
+    width: 100%;
+    height: 100%;
+}
+
+/*promociones*/
+#indexPromociones {
+    background-color: #D3D3D3;
+    height: 25%;
+    width: 70%;
+
+}
+
+.divPromociones {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    height:100%;
+}
+
+.divPromociones a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.divPromociones img {
+    width: 100%;
+    height: 100%;
+    border: 5px dotted #000000;
+}
+
+.ampliar:hover{
+    transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -ms-transform:scale(1.2,1.2);
+}
+
+/*pagos*/
+#indexPagosEnvios {
+    background-color: #D3D3D3;
+    height: 20%;
+    width: 70%;
+}
+
+.divPagosEnvios {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+.divPagosEnvios img {
+    width: 70%;
+    height: 100%;
+}
+
+.rotate:hover{
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+}
+
+}

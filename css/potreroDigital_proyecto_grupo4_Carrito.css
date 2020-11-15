@@ -1,0 +1,75 @@
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*general*/
+
+#prodcar1{
+  width: 30%;
+}
+
+/*Formulario carrito*/
+#producto1{
+  width:50%;
+  padding: 20px;
+  border: 3em solid transparent;
+  margin-bottom:0px;
+  margin-left:16px;
+}
+
+/*Botones*/
+
+.segcom{
+  flex-direction: row;
+   width: 50%;
+   align-items:flex-start;
+   border:none;
+   border-radius:5px;
+   font-size:20px;
+   color:#fff;
+   padding:10px;
+}
+
+#contcom{
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  background-color:#7C7B7B;
+  font-size:15px;
+  color:#fff;
+  align-items: center;
+}
+
+.contcom{
+  align-items: flex-end;
+  padding:10px;
+
+}
+
+
+
+

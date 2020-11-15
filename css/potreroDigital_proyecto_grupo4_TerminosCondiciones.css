@@ -1,0 +1,207 @@
+/************************************TERMINOS Y CONDICIONES************************************/
+
+/************* mobile first ******************/
+@media only screen and (max-width: 600px) {
+
+.containerTermsyCond {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*Titulo*/
+
+.containerTermsyCond h1{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.containerTermsyCond h4{
+    width: auto;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em;
+}
+
+.containerTermsyCond p{
+    text-align: justify;
+    margin: 20px;
+    font-size: 0.8em;
+}
+
+.containerTermsyCond h6{
+    text-align: justify;
+    margin: 15px;
+    font-size: 0.7em;
+}
+
+}
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/**************** dispositivos pequeños **************************/
+
+@media only screen and (min-width: 600px) {
+
+.containerTermsyCond {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*Titulo*/
+
+.containerTermsyCond h1{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.containerTermsyCond h4{
+    width: auto;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em;
+}
+
+.containerTermsyCond p{
+    text-align: justify;
+    margin: 20px;
+    font-size: 0.8em;
+}
+
+.containerTermsyCond h6{
+    text-align: justify;
+    margin: 15px;
+    font-size: 0.7em;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/***************************** tabletas **************************/
+@media (min-width: 768px) {
+
+.containerTermsyCond {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*Titulo*/
+
+.containerTermsyCond h1{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.containerTermsyCond h4{
+    width: auto;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em;
+}
+
+.containerTermsyCond p{
+    text-align: justify;
+    margin: 20px;
+    font-size: 0.8em;
+}
+
+.containerTermsyCond h6{
+    text-align: justify;
+    margin: 15px;
+    font-size: 0.7em;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/************************ escritorio normales ********************/
+@media (min-width: 992px) {
+
+.containerTermsyCond {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.containerTermsyCond h1{
+    text-align: center;
+    margin: 20px;
+
+}
+
+.containerTermsyCond h4{
+    width: auto;
+    text-align: center;
+}
+
+.containerTermsyCond p{
+    text-align: justify;
+    margin: 20px;
+}
+
+.containerTermsyCond h6{
+    text-align: justify;
+    margin: 10px;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/******************** pantallas grandes **************************/
+@media (min-width: 1200px) {
+
+.containerTermsyCond {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.containerTermsyCond h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 2em;
+}
+
+.containerTermsyCond h4{
+    width: auto;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.containerTermsyCond p{
+    text-align: justify;
+    margin: 20px;
+    font-size: 1em;
+}
+
+.containerTermsyCond h6{
+    text-align: justify;
+    margin: 10px;
+    font-size: 0.9em;
+}
+
+
+}

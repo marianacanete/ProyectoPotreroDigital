@@ -1,0 +1,156 @@
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Formulario */
+
+.divformenvios{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px
+}
+
+#formenvio{
+  width:50%;
+  padding: 20px;
+  border: 3em solid transparent;
+  margin-bottom:0px;
+  margin-left:16px;
+
+}
+
+fieldset {
+  background-color:#CCC;
+  max-width:500px;
+  padding:16px;
+  border:2px solid green;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+}
+
+.tipoenvio{
+  display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+}
+
+input:focus {
+  border: 2px solid #000;
+  background: #F3F3F3;
+}
+
+
+/*Campos*/
+
+#nombre{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#apellido{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#dni{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#telefono{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#calle{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#numero{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#piso{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#dpto{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#provincia{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#ciudad{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+/*Botones*/
+#flecha {
+	background: grey;
+	border-radius: 10%;
+	padding: .25em;
+  width: 10%;
+  position: relative;
+  left: -200px;
+  top: 1em;
+  margin-top: 1em;
+}
+
+#siguiente{
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  background-color:#7C7B7B;
+  font-size:20px;
+  color:#fff;
+  align-items: center;
+  position: relative;
+  left: 180px;
+  top: 1em;
+}
+
+.botones{
+flex-direction: row;
+ width: 100%;
+ align-items:flex-start;
+}
+
+.siguiente{
+  align-items: flex-end;
+}
+
+

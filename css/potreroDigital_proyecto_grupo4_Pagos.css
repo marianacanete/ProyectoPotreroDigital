@@ -1,0 +1,152 @@
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/**Formulario**/
+
+
+.Pago{
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+#formenvio{
+width:50%;
+padding: 20px;
+border: 3em solid transparent;
+margin-bottom:0px;
+margin-left:16px;
+}
+
+fieldset
+{
+  background-color:#CCC;
+  max-width:500px;
+  padding:16px;
+  border:2px solid green;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+}
+
+
+/*Campos*/
+
+#desc{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#banco{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#venc {
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#nomtitular{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#numtarj{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#cod{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#cuotas{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#nombre{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#apellido{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#dni{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#telefono{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#calle{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#numero{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#provincia{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#ciudad{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+/*Botones*/
+
+input[type="submit"]{
+width:150px;
+padding:10px;
+border:none;
+border-radius:5px;
+background-color:#7C7B7B;
+font-size:20px;
+color:#fff;
+align-items: center;
+position: static;
+left: 180px;
+top: 1em;
+}
+
+}
+

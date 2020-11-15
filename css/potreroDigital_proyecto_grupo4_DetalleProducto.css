@@ -2,6 +2,192 @@
 /************************************DETALLE PRODUCTO************************************/
 
 /************* mobile first ******************/
+@media only screen and (max-width: 600px) {
+
+.contenedorDetalleProducto {
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.divProducto {
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Detalle Producto*/
+
+.detalleProducto {
+    justify-content: space-between;
+    align-self:center;
+    align-items: center;
+    height: 40%;
+    width: 90%;
+}
+
+.imagenesProducto {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+
+.imagenesProducto img {
+    height: 70%;
+    width: 90%;
+}
+
+.imagenesProducto img {
+    -webkit-transition:all 1s ease; 
+    -ms-transition:all 1s ease; 
+}
+
+.imagenesProducto:hover img {
+    -webkit-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+/*Datos del producto*/
+
+.datosProducto {
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.datosProducto hr {
+    margin: 5px;
+}
+
+.nombrePrecio {
+    margin: 10px 0;
+    height: 40%;
+    justify-content: space-around;
+ }
+
+.nombrePrecio h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+ }
+
+.nombrePrecio h5{
+    padding: 5px 0 0 10px ;
+    font-weight: bold;
+ }
+
+.formCantidad {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-size: 1.1em;
+}
+
+.formCantidad select {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 40%;
+}
+
+.botonCarrito {
+    height: 30%;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.botonCarrito form {
+    background-color: #11cbd7;
+    border-radius: 6px;
+    align-items: center;
+    align-self: center;
+    padding: 7px;
+    width: 50%;
+}
+
+.botonCarrito input {
+    border:none;
+    background-color: #11cbd7;
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+/*Descripcion del producto*/
+
+.descripcionProducto {
+    text-align: justify;
+    height: 38%;
+    font-size: 0.8em;
+    margin:10px;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/**************** dispositivos pequeños **************************/
+
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/***************************** tabletas **************************/
+@media (min-width: 768px) {}
+
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/************************ escritorio normales ********************/
+@media (min-width: 992px) {}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/******************** pantallas grandes **************************/
+@media (min-width: 1200px) {
 
 .contenedorDetalleProducto {
    justify-content: space-around;
@@ -132,4 +318,3 @@
 }
 
 }
-

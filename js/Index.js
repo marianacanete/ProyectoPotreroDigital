@@ -73,3 +73,32 @@
 		
 		return true;
 };
+
+/*CARTEL MENSAJE ENVIADO*/
+
+	function mensajeEnviado () {
+		var nombre =  document.getElementById("nombre");
+		var num = document.getElementById("email").value.indexOf("@");
+		var email = document.getElementById("email").value;
+		var telefono = document.getElementById("telefono").value;
+		var comentario = document.getElementById("comentario").value; 
+
+		
+		if  (nombre == null) {
+			
+			alert("Ingrese un nombre válido");
+
+			if (num == -1 ) {
+
+			alert("No es un e-mail valido!");
+
+			}
+		}
+
+		else {
+
+			alert ("Hemos recibido su mensaje. En breve le responderemos. Gracias");
+		}
+		
+
+};

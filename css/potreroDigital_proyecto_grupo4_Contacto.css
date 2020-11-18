@@ -159,6 +159,10 @@ hr {
     padding: 5px;
 }
 
+.formularioContacto button:hover {
+    background-color: #fa4659;
+}
+
 }
 /*****************************************************************/
 /*****************************************************************/
@@ -309,7 +313,7 @@ hr {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    margin-top: 5px;
+    margin: 5px;
 }
 
 .formularioContacto button {
@@ -323,6 +327,12 @@ hr {
     align-items: center;
     padding: 5px;
 }
+
+.formularioContacto button:hover {
+    background-color: #87f2b4;
+    color: #000000;
+}
+
 }
 
 /*****************************************************************/
@@ -600,8 +610,13 @@ hr {
 }
 /*boton enviar*/
 
+.divButton {
+    margin: 10px;
+}
+
 .formularioContacto button {
-    width: 12%;
+    width: 15%;
+
 }
 
 }

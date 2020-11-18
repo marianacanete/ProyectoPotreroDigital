@@ -18,6 +18,10 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
+<!-- Google Fonts -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -44,7 +48,7 @@
 				</div>
 				<div class="menuCarrito">
 					<a id="carrito" href="potreroDigital_proyecto_grupo4_Carrito.html">
-						<i class="fas fa-shopping-cart fa-lg"></i>
+						<i class="fas fa-shopping-cart fa-2x"></i>
 					</a>
 
 					<div class="buscador">
@@ -53,11 +57,34 @@
 							<i class="fas fa-search"></i>
 						</button>
 					</div>
-
 				</div>
 			</div>
+			<div class="header_Sup_Resp">
+					<div class="logo">
+						<a href="potreroDigital_proyecto_grupo4_Index.html">
+							<img src="images/logo5.png" alt="Logo">
+						</a>
+					</div>
 
+					<div class="menuIconos">
+						<ul>
+							<a id="iniciarSesion" href="potreroDigital_proyecto_grupo4_InicioSesion.html">
+								<i class="fas fa-user fa-lg"></i>
+							</a>
+			
+							<a id="carrito" href="potreroDigital_proyecto_grupo4_Carrito.html">
+								<i class="fas fa-shopping-cart fa-lg"></i>
+							</a>
 
+							<div class="buscador">
+								<input  id="inputBuscador" type="search" placeholder="Buscar"/>
+								<button id="btn_Buscador" onclick="mostrarBuscador()">
+									<i class="fas fa-search" ></i>
+								</button>
+							</div>
+						</ul>
+					</div>
+				</div>
 
 			<nav class="navbar navbar-expand-lg menuNavbar">
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -67,7 +94,7 @@
 				        </a>
 				      </li>
 				      <li class="nav-item dropdown">
-				        <a class="nav-link menuHover" href="potreroDigital_proyecto_grupo4_Productos.html">Productos</a>
+				        <a class="nav-link" href="potreroDigital_proyecto_grupo4_Productos.html">Productos</a>
 	        			<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
 					         <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_ProductosBaño.html">Baño</a>
 					         <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_ProductosCocina.html">Cocina</a>
@@ -93,7 +120,9 @@
 		        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							        <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_Index.html">Inicio</a>
 									<div class="mostrar"> 
-										<a class="dropdown-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="potreroDigital_proyecto_grupo4_Productos.html"> Productos <i class="fas fa-angle-right arrow "></i></a>
+										<a class="dropdown-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="potreroDigital_proyecto_grupo4_Productos.html"> Productos 
+											<i class="fas fa-angle-right arrow "></i>
+										</a>
 					        			<div class="dropdown-menu" id="subMenu" aria-labelledby="navbarDropdownMenuLink" >
 									         <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_ProductosBaño.html">Baño</a>
 									         <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_ProductosCocina.html">Cocina</a>
@@ -211,13 +240,13 @@
 
 			<div id="divRedesSociales">
 				<h6>REDES SOCIALES</h6>
-				<a href="http://www.facebook.com">
+				<a href="http://www.facebook.com" target="_blank">
 					<i class="fab fa-facebook fa-2x"></i>
 				</a>
-				<a href="http://www.twitter.com">
+				<a href="http://www.twitter.com" target="_blank">
 					<i class="fab fa-twitter fa-2x"></i>
 				</a>
-				<a href="http://www.Instagram.com">
+				<a href="http://www.Instagram.com" target="_blank">
 					<i class="fab fa-instagram fa-2x"></i>
 				</a>
 			</div>
@@ -234,7 +263,6 @@
 						<div class="botonSuscribite">
 							<button type="button" name="Suscribite" id="btnSuscribite" onclick="suscribite()">Suscribite</button>
 						</div>
-
 					</form>
 			</div>
 		</div>
@@ -249,11 +277,13 @@
 	</footer>
 
     <!--jQuery, Popper.js, and Bootstrap JS     -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
-   <script type="text/javascript" src="js/Index.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/Index.js"></script>
 
 </body>
 </html>

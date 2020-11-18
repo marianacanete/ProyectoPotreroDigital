@@ -219,7 +219,7 @@ footer h6 {
     color: #ffffff;
     padding: 10px 5px;
     width: 25%;
-    font-size: 0.7em;
+    font-size: 0.5em;
 }
 
 #divContacto li {
@@ -263,12 +263,12 @@ footer h6 {
 }
 
 #divNewsletter input {
-   margin-top: 10px;
+   margin-top: 5px;
 }
 
 #inputEmail {
     padding-left: 5px;
-    font-size: 0.7em;
+    font-size: 0.5em;
     width: 100%;
     align-self: center;
 }
@@ -277,14 +277,14 @@ footer h6 {
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
 }
 
 #btnSuscribite{
     justify-content: center;
     height:28px;
-    font-size: 0.7em;
+    font-size: 0.6em;
     color: #f7f7f7;
     background-color: #11cbd7;
     border-radius: 6px;

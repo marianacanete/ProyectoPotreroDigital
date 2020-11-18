@@ -160,6 +160,7 @@
     width: 100%;
     height: 85px;
     padding: 20px 0;
+    font-size: 0.8em;
 }
 
 .descripcion p {
@@ -343,6 +344,7 @@
     width: 100%;
     height: 85px;
     padding: 20px 0;
+    font-size: 0.9em;
 }
 
 .descripcion p {
@@ -449,7 +451,7 @@
 /*poducto de cada fila*/
 
 .producto {
-    font-size: 14px;
+    font-size: 0.8em;
     width: 160px;
 }
 

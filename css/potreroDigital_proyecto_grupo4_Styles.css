@@ -195,7 +195,7 @@ footer {
 }
 
 footer h6 {
-    font-size: 12px;
+    font-size: 0.9em;
     text-align: center;
 }
 
@@ -219,7 +219,7 @@ footer h6 {
     color: #ffffff;
     padding: 10px 5px;
     width: 25%;
-    font-size: 10px;
+    font-size: 0.7em;
 }
 
 #divContacto li {
@@ -244,7 +244,7 @@ footer h6 {
     color: #ffffff;
     padding: 10px 0;
     width: 10%;
-    font-size: 12px;
+    font-size: 0.7em;
  }
 
  #divRedesSociales a {
@@ -268,7 +268,7 @@ footer h6 {
 
 #inputEmail {
     padding-left: 5px;
-    font-size: 10px;
+    font-size: 0.7em;
     width: 100%;
     align-self: center;
 }
@@ -277,14 +277,14 @@ footer h6 {
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    margin: 10px 0;
+    margin: 20px 0;
     width: 100%;
 }
 
 #btnSuscribite{
     justify-content: center;
     height:28px;
-    font-size: 13px;
+    font-size: 0.7em;
     color: #f7f7f7;
     background-color: #11cbd7;
     border-radius: 6px;
@@ -295,7 +295,7 @@ footer h6 {
 
 #graciasPorSuscribirte {
     display: none;
-    font-size: 12px;
+    font-size: 0.7em;
     margin: 0;
     background-color: #FFFFFF;
     color: #000000;
@@ -319,13 +319,13 @@ footer h6 {
 .copyright p {
     flex-direction: row;
     justify-content: center;
-    font-size: 11px;
+    font-size: 0.6em;
     color: #ffffff;
     margin:0;
 }
 
 #irArriba {
-    font-size: 30px;
+    font-size: 2em;
     text-decoration: none;
     color: #ffffff;
 }
@@ -448,7 +448,7 @@ body {
     display: none;
     outline: none;
     color: #000000;
-    font-size: 12px;
+    font-size: 0.8em;
     line-height: 20px;
     text-align: center;
     width: 70%;
@@ -539,7 +539,7 @@ footer {
 }
 
 footer h6 {
-    font-size: 12px;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -551,6 +551,7 @@ footer h6 {
     align-items: center;
     height: 85%;
     width: 100%;
+    padding: 0 20px;
 }
 
 .footer_div div {
@@ -562,13 +563,13 @@ footer h6 {
 #divContacto {
     color: #ffffff;
     padding: 10px 5px;
-    width: 25%;
-    font-size: 10px;
+    width: 30%;
+    font-size: 0.7em;
 }
 
 #divContacto li {
     flex-direction: row;
-    padding: 2px;
+    padding: 8px;
 }
 
 #divContacto i {
@@ -587,8 +588,8 @@ footer h6 {
     align-items: center;
     color: #ffffff;
     padding: 10px 0;
-    width: 10%;
-    font-size: 12px;
+    width: 30%;
+    font-size: 0.8em;
  }
 
  #divRedesSociales a {
@@ -602,7 +603,7 @@ footer h6 {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    width: 25%;
+    width: 30%;
     color: #ffffff;
 }
 
@@ -612,7 +613,7 @@ footer h6 {
 
 #inputEmail {
     padding-left: 5px;
-    font-size: 10px;
+    font-size: 0.8em;
     width: 100%;
     align-self: center;
 }
@@ -621,14 +622,14 @@ footer h6 {
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    margin: 10px 0;
+    margin: 20px 0;
     width: 100%;
 }
 
 #btnSuscribite{
     justify-content: center;
     height:28px;
-    font-size: 13px;
+    font-size: 0.8em;
     color: #f7f7f7;
     background-color: #11cbd7;
     border-radius: 6px;
@@ -639,7 +640,7 @@ footer h6 {
 
 #graciasPorSuscribirte {
     display: none;
-    font-size: 12px;
+    font-size: 0.8em;
     margin: 0;
     background-color: #FFFFFF;
     color: #000000;
@@ -662,7 +663,7 @@ footer h6 {
 .copyright p{
     flex-direction: row;
     justify-content: center;
-    font-size: 11px;
+    font-size: 0.7em;
     color: #ffffff;
     margin:0;
 }
@@ -852,11 +853,11 @@ footer h6 {
 footer {
     justify-content: space-between;
     background-color: #3a4750;
-    height: 35vh;
+    height: 40vh;
 }
 
 footer h6 {
-    font-size: 12px;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -880,12 +881,12 @@ footer h6 {
     color: #ffffff;
     padding: 10px 5px;
     width: 25%;
-    font-size: 10px;
+    font-size: 0.8em;
 }
 
 #divContacto li {
     flex-direction: row;
-    padding: 2px;
+    padding: 10px;
 }
 
 #divContacto i {
@@ -905,13 +906,14 @@ footer h6 {
     color: #ffffff;
     padding: 10px 0;
     width: 10%;
-    font-size: 12px;
+    font-size: 0.8em;
 }
 
  #divRedesSociales a {
     text-decoration: none;
     color: #11cbd7;
-    padding: 5px 0 0 5px;
+    padding: 10px 0 0 5px;
+    font-size: 1em;
 }
 
 /*newsletter*/
@@ -929,7 +931,7 @@ footer h6 {
 
 #inputEmail {
     padding-left: 5px;
-    font-size: 10px;
+    font-size: 0.9em;
     width: 100%;
     align-self: center;
 }
@@ -938,14 +940,14 @@ footer h6 {
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    margin: 10px 0;
+    margin: 20px 0;
     width: 100%;
 }
 
 #btnSuscribite{
     justify-content: center;
     height:28px;
-    font-size: 13px;
+    font-size: 1em;
     color: #f7f7f7;
     background-color: #11cbd7;
     border-radius: 6px;
@@ -956,7 +958,7 @@ footer h6 {
 
 #graciasPorSuscribirte {
     display: none;
-    font-size: 12px;
+    font-size: 0.8em;
     margin: 0;
     background-color: #FFFFFF;
     color: #000000;
@@ -980,7 +982,7 @@ footer h6 {
 .copyright p{
     flex-direction: row;
     justify-content: center;
-    font-size: 11px;
+    font-size: 0.8em;
     color: #ffffff;
     margin:0;
 }

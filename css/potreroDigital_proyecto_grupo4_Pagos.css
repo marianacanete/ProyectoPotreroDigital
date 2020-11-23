@@ -3,6 +3,12 @@
 /************* mobile first ******************/
 @media only screen and (max-width: 600px) {
 
+.contenedorPagos {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
 
 /*****breadcrumb******/
 
@@ -31,129 +37,274 @@
     color: #000000;
 }
 
-/**Formulario**/
+/****Titulo****/
 
-
-.Pago{
-display:flex;
-justify-content:center;
-align-items:center;
-
+.contenedorPagos h3 {
+  flex-direction: row;
+  font-size: 1.3em;
+  width: 70%;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
 }
 
-#formenvio{
-width:50%;
-padding: 20px;
-border: 3em solid transparent;
-margin-bottom:0px;
-margin-left:16px;
+.contenedorPagos h3::after, h3::before{
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  position: relative;
+  top: 0.5em;
 }
 
-fieldset
-{
-  background-color:#CCC;
-  max-width:500px;
-  padding:16px;
-  border:2px solid green;
-  -moz-border-radius:8px;
-  -webkit-border-radius:8px;
-  border-radius:8px;
+.contenedorPagos h3::before{
+  margin-right: 10px;
 }
 
-
-/*Campos*/
-
-#desc{
-   border-radius: 5px;
-   background-color: #def;
+.contenedorPagos h3::after{
+  margin-left: 10px;
 }
 
-#banco{
-   border-radius: 5px;
-   background-color: #def;
+/****Formulario Medios de Pagos****/
+
+.divPagos {
+  width: 65%;
 }
 
-#venc {
-   border-radius: 5px;
-   background-color: #def;
+/*cupon*/
+
+.cupon {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+  padding: 15px;
 }
 
-#nomtitular{
-   border-radius: 5px;
-   background-color: #def;
+.cupon div {
+  flex-direction: row;
 }
 
-#numtarj{
-   border-radius: 5px;
-   background-color: #def;
+#botondesc {
+  margin-left: 10px;
 }
 
-#cod{
-   border-radius: 5px;
-   background-color: #def;
+/* tarjeta*/
+
+.tarjeta {
+  margin: 15px 0;
+  border: 1px solid #dedede;
 }
 
-#cuotas{
-   border-radius: 5px;
-   background-color: #def;
+.selecTarjeta {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
 }
 
-#nombre{
-   border-radius: 5px;
-   background-color: #def;
+.selecTarjeta label {
+  margin: 0;
+  padding-left: 10px;
 }
 
-#apellido{
-  border-radius: 5px;
-  background-color: #def;
+/*div oculto*/
+
+#tarjetaOculto{
+  display: none;
+  width: 90%;
+  align-self: center;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #f2f2f2;
+  font-size: 0.8em;
 }
 
-#dni{
-  border-radius: 5px;
-  background-color: #def;
+.fila {
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-#telefono{
-  border-radius: 5px;
-  background-color: #def;
+.fila label {
+  width: 30%;
 }
 
-#calle{
-  border-radius: 5px;
-  background-color: #def;
+.fila input {
+  width: 70%;
 }
 
-#numero{
-  border-radius: 5px;
-  background-color: #def;
+.filaNombre {
+  flex-direction: row;
+  align-self: center;
+  width: 80%;
 }
 
-#provincia{
-  border-radius: 5px;
-  background-color: #def;
+#nomtitular {
+  width: 100%;
+  align-self: flex-start;
 }
 
-#ciudad{
-  border-radius: 5px;
-  background-color: #def;
+#nomtitular input {
+  width: 96%;
+  font-size: 14px;
 }
 
-/*Botones*/
-
-input[type="submit"]{
-width:150px;
-padding:10px;
-border:none;
-border-radius:5px;
-background-color:#7C7B7B;
-font-size:20px;
-color:#fff;
-align-items: center;
-position: static;
-left: 180px;
-top: 1em;
+.filaNro {
+  flex-direction: row;
+  width: 100%;
+  align-self: space-between;
 }
 
+#numtarj {
+  width: 60%;
+}
+
+#numtarj input {
+  width: 90%;
+  font-size: 14px;
+}
+
+#cod {
+  width: 40%;
+}
+
+#cod input {
+    width: 70%;
+}
+
+.filaVenc {
+  align-self: center;
+  align-items: center;
+}
+
+#venc input {
+  flex-direction: row;
+  font-size: 14px;
+}
+
+/*rapipago*/
+
+.rapiPagoFacil {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecRapi {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecRapi label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#rapiOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#rapiOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.medioPago {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.medioPago img {
+  padding: 5px;
+  width: 70px;
+}
+
+/*a convenir*/
+.convenir{
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecConvenir {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecConvenir label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#convenirOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#convenirOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+/****Botones****/
+
+.botones {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 15px;
+}
+
+.botones div{
+  margin-left: 40px;
+}
+
+.botones input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+}
+
+#volver{
+  flex-direction: row;
+  align-items: center;
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+  color: #f7f7f7;
+  background-color: #11cbd7;
+  font-weight: bold;
+}
+
+#volver i {
+  padding: 0 17px;
+}
+
+#finalizar{
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+  align-items: center;
+  color: #f7f7f7;
+  background-color: #11cbd7;
+  font-weight: bold;
+}
 }
 
 
@@ -164,6 +315,309 @@ top: 1em;
 /**************** dispositivos pequeños **************************/
 
 @media only screen and (min-width: 600px) {
+
+.contenedorPagos {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/****Titulo****/
+
+.contenedorPagos h3 {
+  flex-direction: row;
+  font-size: 1.3em;
+  width: 70%;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.contenedorPagos h3::after, h3::before{
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  position: relative;
+  top: 0.5em;
+}
+
+.contenedorPagos h3::before{
+  margin-right: 10px;
+}
+
+.contenedorPagos h3::after{
+  margin-left: 10px;
+}
+
+/****Formulario Medios de Pagos****/
+
+.divPagos {
+  width: 65%;
+}
+
+/*cupon*/
+
+.cupon {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+  padding: 15px;
+}
+
+.cupon div {
+  flex-direction: row;
+}
+
+#botondesc {
+  margin-left: 10px;
+}
+
+/* tarjeta*/
+
+.tarjeta {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecTarjeta {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecTarjeta label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+/*div oculto*/
+
+#tarjetaOculto{
+  display: none;
+  width: 90%;
+  align-self: center;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #f2f2f2;
+  font-size: 0.8em;
+}
+
+.fila {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fila label {
+  width: 30%;
+}
+
+.fila input {
+  width: 70%;
+}
+
+.filaNombre {
+  flex-direction: row;
+  align-self: center;
+  width: 80%;
+}
+
+#nomtitular {
+  width: 100%;
+  align-self: flex-start;
+}
+
+#nomtitular input {
+  width: 96%;
+  font-size: 14px;
+}
+
+.filaNro {
+  flex-direction: row;
+  width: 100%;
+  align-self: space-between;
+}
+
+#numtarj {
+  width: 60%;
+}
+
+#numtarj input {
+  width: 90%;
+  font-size: 14px;
+}
+
+#cod {
+  width: 40%;
+}
+
+#cod input {
+    width: 70%;
+}
+
+.filaVenc {
+  align-self: center;
+  align-items: center;
+}
+
+#venc input {
+  flex-direction: row;
+  font-size: 14px;
+}
+
+/*rapipago*/
+
+.rapiPagoFacil {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecRapi {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecRapi label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#rapiOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#rapiOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.medioPago {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.medioPago img {
+  padding: 5px;
+  width: 70px;
+}
+
+/*a convenir*/
+.convenir{
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecConvenir {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecConvenir label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#convenirOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#convenirOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+/****Botones****/
+
+.botones {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 15px;
+}
+
+.botones div{
+  margin-left: 40px;
+}
+
+.botones input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+}
+
+#volver{
+  flex-direction: row;
+  align-items: center;
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+  color: #f7f7f7;
+  background-color: #11cbd7;
+  font-weight: bold;
+}
+
+#volver i {
+  padding: 0 17px;
+}
+
+#finalizar{
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+  align-items: center;
+  color: #f7f7f7;
+  background-color: #11cbd7;
+  font-weight: bold;
+}
 }
 
 /*****************************************************************/
@@ -171,22 +625,9 @@ top: 1em;
 /*****************************************************************/
 /*****************************************************************/
 /***************************** tabletas **************************/
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
 
-/*****************************************************************/
-/*****************************************************************/
-/*****************************************************************/
-/*****************************************************************/
-/************************ escritorio normales ********************/
-@media (min-width: 992px) {}
-
-/*****************************************************************/
-/*****************************************************************/
-/*****************************************************************/
-/******************** pantallas grandes **************************/
-@media (min-width: 1200px) {
-
-.contenedorPagos {
+  .contenedorPagos {
   align-items: center;
   width: 100%;
   height: 100%;
@@ -434,53 +875,519 @@ top: 1em;
   font-size: 14px;
 }
 
-/****Botones****/
+}
 
-.botones {
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/************************ escritorio normales ********************/
+@media (min-width: 992px) {
+
+  .contenedorPagos {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/****Titulo****/
+
+.contenedorPagos h3 {
+  flex-direction: row;
+  font-size: 1.3em;
+  width: 70%;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.contenedorPagos h3::after, h3::before{
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  position: relative;
+  top: 0.5em;
+}
+
+.contenedorPagos h3::before{
+  margin-right: 10px;
+}
+
+.contenedorPagos h3::after{
+  margin-left: 10px;
+}
+
+/****Formulario Medios de Pagos****/
+
+.divPagos {
+  width: 65%;
+}
+
+/*cupon*/
+
+.cupon {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+  padding: 15px;
+}
+
+.cupon div {
+  flex-direction: row;
+}
+
+#botondesc {
+  margin-left: 10px;
+}
+
+/* tarjeta*/
+
+.tarjeta {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecTarjeta {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecTarjeta label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+/*div oculto*/
+
+#tarjetaOculto{
+  display: none;
+  width: 80%;
+  align-self: center;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.fila {
   flex-direction: row;
   justify-content: space-around;
-  width: 60%;
-  margin-top: 15px;
 }
 
-.botones div{
-  margin-left: 40px;
+.fila label {
+  width: 13%;
 }
 
-.botones input {
-  border: none;
-  background-color: transparent;
-  color: #fff;
-  font-weight: bold;
+.fila input {
+  width: 85%;
 }
 
-#volver{
+.filaNombre {
+  flex-direction: row;
+  align-self: center;
+  width: 80%;
+}
+
+#nomtitular {
+  width: 100%;
+  align-self: flex-start;
+}
+
+#nomtitular input {
+  width: 96%;
+  font-size: 14px;
+}
+
+.filaNro {
+  flex-direction: row;
+  width: 80%;
+  align-self: center;
+}
+
+#numtarj {
+  width: 70%;
+}
+
+#numtarj input {
+  width: 90%;
+  font-size: 14px;
+}
+
+#cod {
+  width: 30%;
+}
+
+.filaVenc {
+  align-self: center;
+}
+
+#venc input {
+  flex-direction: row;
+  font-size: 14px;
+}
+
+/*rapipago*/
+
+.rapiPagoFacil {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecRapi {
   flex-direction: row;
   align-items: center;
-  width:150px;
-  padding:10px;
-  border:none;
-  border-radius:5px;
-  font-size:15px;
-  color: #f7f7f7;
-  background-color: #11cbd7;
-  font-weight: bold;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
 }
 
-#volver i {
-  padding: 0 17px;
+.selecRapi label {
+  margin: 0;
+  padding-left: 10px;
 }
 
-#finalizar{
-  width:150px;
-  padding:10px;
-  border:none;
-  border-radius:5px;
-  font-size:15px;
+#rapiOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#rapiOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.medioPago {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.medioPago img {
+  padding: 5px;
+  width: 70px;
+}
+
+/*a convenir*/
+.convenir{
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecConvenir {
+  flex-direction: row;
   align-items: center;
-  color: #f7f7f7;
-  background-color: #11cbd7;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecConvenir label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#convenirOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#convenirOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/******************** pantallas grandes **************************/
+@media (min-width: 1200px) {
+
+.contenedorPagos {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/****Titulo****/
+
+.contenedorPagos h3 {
+  flex-direction: row;
+  font-size: 1.3em;
+  width: 70%;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
   font-weight: bold;
+}
+
+.contenedorPagos h3::after, h3::before{
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  position: relative;
+  top: 0.5em;
+}
+
+.contenedorPagos h3::before{
+  margin-right: 10px;
+}
+
+.contenedorPagos h3::after{
+  margin-left: 10px;
+}
+
+/****Formulario Medios de Pagos****/
+
+.divPagos {
+  width: 65%;
+}
+
+/*cupon*/
+
+.cupon {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+  padding: 15px;
+}
+
+.cupon div {
+  flex-direction: row;
+}
+
+#botondesc {
+  margin-left: 10px;
+}
+
+/* tarjeta*/
+
+.tarjeta {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecTarjeta {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecTarjeta label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+/*div oculto*/
+
+#tarjetaOculto{
+  display: none;
+  width: 80%;
+  align-self: center;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+  font-size: 1em;
+}
+
+.fila {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fila label {
+  width: 13%;
+}
+
+.fila input {
+  width: 85%;
+}
+
+.filaNombre {
+  flex-direction: row;
+  align-self: center;
+  width: 100%;
+}
+
+#nomtitular {
+  width: 100%;
+  align-self: flex-start;
+}
+
+#nomtitular input {
+  width: 96%;
+  font-size: 14px;
+}
+
+.filaNro {
+  flex-direction: row;
+  width: 100%;
+  align-self: center;
+}
+
+#numtarj {
+  width: 70%;
+}
+
+#numtarj input {
+  width: 90%;
+  font-size: 14px;
+}
+
+#cod {
+  width: 30%;
+}
+
+#cod input {
+    width: 85%;
+    font-size: 14px;
+}
+
+.filaVenc {
+  align-self: center;
+  align-items: none;
+}
+
+/*rapipago*/
+
+.rapiPagoFacil {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecRapi {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecRapi label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#rapiOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#rapiOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.medioPago {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.medioPago img {
+  padding: 5px;
+  width: 70px;
+}
+
+/*a convenir*/
+.convenir{
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecConvenir {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecConvenir label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#convenirOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#convenirOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
 }
 
 

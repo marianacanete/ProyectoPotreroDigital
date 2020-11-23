@@ -1393,6 +1393,8 @@ footer h6 {
     display: block;
     background-color: #FFFFFF;
     color: #000000;
+    top:40px;
+    left: 20px;
 }
 
 .divHamburguesa {

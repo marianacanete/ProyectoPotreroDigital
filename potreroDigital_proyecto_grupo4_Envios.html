@@ -12,13 +12,14 @@
 
 	<!-- Stlylesheet -->
 	<link rel="stylesheet" type="text/css" href="./css/potreroDigital_proyecto_grupo4_Styles.css">
-	<link rel="stylesheet" type="text/css" href="./css/potreroDigital_proyecto_grupo4_envios.css">
+	<link rel="stylesheet" type="text/css" href="./css/potreroDigital_proyecto_grupo4_Envios.css">
 
 	<!-- Font Awesome Iconos -->
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-<!-- Google Fonts -->
+
+	<!-- Google Fonts -->
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
@@ -139,6 +140,7 @@
 			</nav>
 		</div>
 	</header>
+
 	<main>
 	
 		<div class="contenedorEnvios">
@@ -153,86 +155,83 @@
 				</ul>
 			</div>
 
-			<div class="divformenvios">
-				
-				<form id="formenvio" action="potreroDigital_proyecto_grupo4_Pagos.html">
-					<div class="tipoenvio">
-						<fieldset>
-		     				<legend>Envios a Domicilio</legend>
-							 <label>
-							 	<input type="radio" class="fondo-form" name="tipoenvio" value="domicilio" >$300
-							 </label>
-						</fieldset>
-				 		<fieldset>
-							<legend>Retiro en Sucursal</legend>
-							<label>	
-								<input type="radio" class="fondo-form" name="tipoenvio" value="sucursal">Callefalsa 123 - CABA
-							</label>
-						</fieldset>
+			<h3>ENTREGAS</h3>
+
+			<div class="divFormEnvios">
+				<div class="tipoEnvio">
+					<h5>Envios a Domicilio</h5>
+					<div class="divEnvio"> 
+						<div>
+							<input type="radio" name="tipoenvio" value="domicilio">
+							<label for="300">$300</label>
+						</div>
+						<p>ENVIOS A CABA, GRAN BUENOS AIRES Y PCIA. DE BUENOS AIRES</p>
 					</div>
-		
-					<div class="container">
-						<fieldset>
-							<legend>Datos del Envio</legend>
-							<p>
-								<label>Nombre:<br>
-									<input  type="text" class="fondo-form" id="nombre" onblur="validarnombre();">
+					<br>
+					<h5>Retiro en Sucursal</h5>
+					<div class="divEnvio">
+						<div>
+							<input id="sucursal" type="radio"  name="tipoenvio" value="sucursal"> 
+							<label for="gratis">Gratis</label>
+						</div>
+						<h6>Retiras en el local</h6>
+						<p>	Callefalsa 123 CABA - Horario a convenir: comunicarse por tel al +549 0303-456 para coordinar.</p>
+					</div>
+					
+				</div>
+							
+				<div class="containerCampos">
+						<h5>Datos del Envio</h5>
+
+						<div class="campos">
+
+							<div class="fila">
+								<label id="nombre" >Nombre:<br>
+									<input  type="text" onblur="validarnombre();" placeholder="Ingrese su nombre">
 									<span id="nombrePrompt"></span>
 								</label>
-							</p>
-
-							<p>
-				 				<label>Apellido:
-									<input type="text" class="fondo-form" id="apellido" name="apellido" onblur="validarapellido();">
+				 				<label id="apellido">Apellido:
+									<input type="text"  name="apellido" onblur="validarapellido();" placeholder="Ingrese su apellido">
 									<span id="apellidoPrompt"></span>
 								</label>
-							</p>
+							</div>
 
-							<p>
-				 				<label>	DNI:
-									<input type="number" class="fondo-form" id="dni" name="dni" onblur="validardni();">
+							<div class="fila">
+				 				<label id="dni">	DNI:
+									<input type="text"  name="dni" onblur="validardni();" placeholder="Nro de DNI">
 									<span id="dniPrompt"></span>
 								</label>
-							</p>
-
-							<p>
-								<label>Telefono:
-									<input name="telefono" id="telefono" type="text" onblur="validartelefono();">
+								<label id="telefono">Telefono:
+									<input name="telefono"  type="tel" onblur="validartelefono();" placeholder="(Código de área) Número)">
 									<span id="telefonoPrompt"></span>
 								</label>
-							</p>
+							</div>
 
-							<p>
-								<label>	Calle:
-									<input type="text" class="fondo-form" id="calle" name="calle" onblur="validarcalle();">
+							<div class="fila">
+								<label id="calle">	Calle:
+									<input type="text"  name="calle" onblur="validarcalle();" placeholder="Ingrese su domicilio">
 									<span id="callePrompt"></span>
 								</label>
-							</p>
+							</div>
 
-							<p>
+							<div class="filaDetalleDir">
 								<label>Numero:
-									<input type="number" class="fondo-form" id="numero" name="numero" onblur="validarnumero();">
+									<input type="text"  name="numero" onblur="validarnumero();" placeholder="Nro">
 									<span id="numeroPrompt"></span>
 								</label>
-							</p>
-
-							<p>
 								<label>	Piso:
-									<input type="number" class="fondo-form" id="piso" name="piso" onblur="validarpiso();">
+									<input type="text"  name="piso" onblur="validarpiso();" placeholder="Piso">
 									<span id="pisoPrompt"></span>
 								</label>
-							</p>
-
-							<p>
 								<label>Depto:
-									<input type="text" class="fondo-form" id="dpto" name="dpto" onblur="validardpto();">
+									<input type="text"  name="dpto" onblur="validardpto();" placeholder="Dpto">
 									<span id="dptoPrompt"></span>
 								</label>
-							</p>
+							</div>
 
-							<p>
-								<label>Provincia
-									<select id = "provincia" name="Provincia">
+							<div class="fila">
+								<label id= "provincia">Provincia
+									<select  name="Provincia">
 										<option value="Buenos_Aires">Buenos Aires</option>
 										<option value="Catamarca">Catamarca</option>
 										<option value="Chaco">Chaco</option>
@@ -258,26 +257,25 @@
 										<option value="Tucuman">Tucumán</option>
 									</select>
 								</label>
-							</p>
-
-							<p>
 								<label>Ciudad:
-									<input type="text" class="fondo-form" id="ciudad" name="cuidad" onblur="validarcuidad();">
+									<input type="text" class="fondo-form" id="ciudad" name="cuidad" onblur="validarcuidad();" placeholder="Opcional">
 									<span id="cuidadPrompt"></span>
 								</label>
-							</p>
-						</fieldset>
-					</div>
-
-					<div class="botones">
-						<a href="potreroDigital_proyecto_grupo4_Carrito.html">
-							<img id="flecha" src="images\envios\flechita.png" alt="flecha">
-						</a>
-						<div class="siguiente">
-							<input id="siguiente" type="submit" value="Siguiente">
+							</div>
 						</div>
 					</div>
-				</form>
+
+					
+			</div>
+
+			<div class="botones">
+				<div id="volver" onclick="location.href='potreroDigital_proyecto_grupo4_Carrito.html'" >
+					<i class="fas fa-arrow-left"></i> 
+					<input type="submit" value="Volver"> 
+				</div>
+				<div id="seguir" onclick="location.href='potreroDigital_proyecto_grupo4_Pagos.html'">
+					<input   type="submit" value="Continuar">
+				</div>
 			</div>
 		</div>
 	</main>
@@ -332,13 +330,18 @@
 			</div>
 
 			<div id="divNewsletter">
-				<section>
+			
 					<form>
 						<h6>Suscribite a nuestro Newsletter</h6>
+				
+						<p id="graciasPorSuscribirte"> ¡Gracias por suscribirte! A partir de ahora vas a recibir nuestras novedades en tu email </p>	
+					
 						<input id=inputEmail type="text" name="email" placeholder="Ingrese su email">
-						<input id="botonSuscribite" type="submit" value="Suscribite">
+					
+						<div class="botonSuscribite">
+							<button type="button" name="Suscribite" id="btnSuscribite" onclick="suscribite()">Suscribite</button>
+						</div>
 					</form>
-				</section>
 			</div>
 		</div>
 

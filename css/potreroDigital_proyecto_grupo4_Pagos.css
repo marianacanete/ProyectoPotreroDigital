@@ -1,3 +1,9 @@
+/************************************PAGOS************************************/
+
+/************* mobile first ******************/
+@media only screen and (max-width: 600px) {
+
+
 /*****breadcrumb******/
 
 .divBreadcrumb{
@@ -150,3 +156,332 @@ top: 1em;
 
 }
 
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/**************** dispositivos pequeños **************************/
+
+@media only screen and (min-width: 600px) {
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/***************************** tabletas **************************/
+@media (min-width: 768px) {}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/************************ escritorio normales ********************/
+@media (min-width: 992px) {}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/******************** pantallas grandes **************************/
+@media (min-width: 1200px) {
+
+.contenedorPagos {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/****Titulo****/
+
+.contenedorPagos h3 {
+  flex-direction: row;
+  font-size: 1.3em;
+  width: 70%;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.contenedorPagos h3::after, h3::before{
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  position: relative;
+  top: 0.5em;
+}
+
+.contenedorPagos h3::before{
+  margin-right: 10px;
+}
+
+.contenedorPagos h3::after{
+  margin-left: 10px;
+}
+
+/****Formulario Medios de Pagos****/
+
+.divPagos {
+  width: 65%;
+}
+
+/*cupon*/
+
+.cupon {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+  padding: 15px;
+}
+
+.cupon div {
+  flex-direction: row;
+}
+
+#botondesc {
+  margin-left: 10px;
+}
+
+/* tarjeta*/
+
+.tarjeta {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecTarjeta {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecTarjeta label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+/*div oculto*/
+
+#tarjetaOculto{
+  display: none;
+  width: 80%;
+  align-self: center;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.fila {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fila label {
+  width: 13%;
+}
+
+.fila input {
+  width: 85%;
+}
+
+.filaNombre {
+  flex-direction: row;
+  align-self: center;
+  width: 80%;
+}
+
+#nomtitular {
+  width: 100%;
+  align-self: flex-start;
+}
+
+#nomtitular input {
+  width: 96%;
+  font-size: 14px;
+}
+
+.filaNro {
+  flex-direction: row;
+  width: 80%;
+  align-self: center;
+}
+
+#numtarj {
+  width: 70%;
+}
+
+#numtarj input {
+  width: 90%;
+  font-size: 14px;
+}
+
+#cod {
+  width: 30%;
+}
+
+.filaVenc {
+  align-self: center;
+}
+
+#venc input {
+  flex-direction: row;
+  font-size: 14px;
+}
+
+/*rapipago*/
+
+.rapiPagoFacil {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecRapi {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecRapi label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#rapiOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#rapiOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.medioPago {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.medioPago img {
+  padding: 5px;
+  width: 70px;
+}
+
+/*a convenir*/
+.convenir{
+  margin: 15px 0;
+  border: 1px solid #dedede;
+}
+
+.selecConvenir {
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom:  1px solid #dedede;
+}
+
+.selecConvenir label {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#convenirOculto {
+  display: none;
+  margin: 20px;
+  padding: 10px 0;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 80%;
+}
+
+#convenirOculto p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+/****Botones****/
+
+.botones {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 15px;
+}
+
+.botones div{
+  margin-left: 40px;
+}
+
+.botones input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+}
+
+#volver{
+  flex-direction: row;
+  align-items: center;
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+  color: #f7f7f7;
+  background-color: #11cbd7;
+  font-weight: bold;
+}
+
+#volver i {
+  padding: 0 17px;
+}
+
+#finalizar{
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+  align-items: center;
+  color: #f7f7f7;
+  background-color: #11cbd7;
+  font-weight: bold;
+}
+
+
+}

@@ -1,3 +1,15 @@
+/************************************CARRITO************************************/
+
+/************* mobile first ******************/
+@media only screen and (max-width: 600px) {
+
+.contenedorCarrito {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 /*****breadcrumb******/
 
 .divBreadcrumb{
@@ -25,22 +37,238 @@
     color: #000000;
 }
 
-/*general*/
+/*Carrito*/
 
-#prodcar1{
-  width: 30%;
+.contenedorCarrito{
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 20px 0;
+  background-color: pink;
 }
 
-/*Formulario carrito*/
-#producto1{
-  width:50%;
-  padding: 20px;
-  border: 3em solid transparent;
-  margin-bottom:0px;
-  margin-left:16px;
+.contenedorCarrito h3 {
+  flex-direction: row;
+  font-size: 1.3em;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.contenedorCarrito h3::after, h3::before{
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  position: relative;
+  top: 0.5em;
+}
+
+.contenedorCarrito h3::before{
+  margin-right: 10px;
+}
+
+.contenedorCarrito h3::after{
+  margin-left: 10px;
+}
+
+.divCarritoCompras {
+  background-color: pink;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/*Descripcion*/
+
+.descripcion {
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.descripcion ul {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.descripcion li {
+
+}
+
+/*Contenido de la compra*/
+
+.contenidoDeCompra {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  background-color: blue;
+}
+
+.prod {
+  width: 40%;
+  height: 100%;
+  background-color: green;
+}
+
+
+
+/*Botones*/
+
+.botones {
+  flex-direction: row;
+}
+
+.segcom{
+  flex-direction: row;
+   width: 50%;
+   align-items:flex-start;
+   border:none;
+   border-radius:5px;
+   font-size:20px;
+   color:#fff;
+   padding:10px;
+}
+
+#contcom{
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  background-color:#7C7B7B;
+  font-size:15px;
+  color:#fff;
+  align-items: center;
+}
+
+.contcom{
+  align-items: flex-end;
+  padding:10px;
+
+}.contenedorCarrito {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Container*/
+
+.container {
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 20px 0;
+  background-color: pink;
+}
+
+.container h3 {
+  flex-direction: row;
+  font-size: 1.3em;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.container h3::after, h3::before{
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  position: relative;
+  top: 0.5em;
+}
+
+.container h3::before{
+  margin-right: 10px;
+}
+
+.container h3::after{
+  margin-left: 10px;
+}
+
+/*carritodecompras*/
+
+.divCarritoCompras {
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 20px 0;
+  background-color: pink;
+
+}
+
+/*Descripcion*/
+
+.descripcion {
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.descripcion ul {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*Contenido de la compra*/
+
+.contenidoDeCompra {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  background-color: blue;
+}
+
+.prod {
+  width: 40%;
+  height: 100%;
+  background-color: green;
 }
 
 /*Botones*/
+
+.botones {
+  flex-direction: row;
+}
 
 .segcom{
   flex-direction: row;
@@ -70,6 +298,239 @@
 
 }
 
+}
 
 
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/**************** dispositivos pequeños **************************/
+
+@media only screen and (min-width: 600px) {
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/***************************** tabletas **************************/
+@media (min-width: 768px) {}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/************************ escritorio normales ********************/
+@media (min-width: 992px) {}
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/******************** pantallas grandes **************************/
+@media (min-width: 1200px) {
+
+.contenedorCarrito {
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/*****breadcrumb******/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/****titulo****/
+
+.contenedorCarrito h3 {
+  flex-direction: row;
+  font-size: 1.3em;
+  width: 70%;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.contenedorCarrito h3::after, h3::before{
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  position: relative;
+  top: 0.5em;
+}
+
+.contenedorCarrito h3::before{
+  margin-right: 10px;
+}
+
+.contenedorCarrito h3::after{
+  margin-left: 10px;
+}
+
+/****Carrito****/
+
+.divCarritoCompras {
+  width: 80%;
+  height: 40%;
+}
+
+/*Descripcion*/
+
+.descripcion {
+  flex-direction: row;
+  width: 100%;
+  height: 17%;
+  margin: 20px 0 10px 0;
+  background-color:#7C7B7B;
+}
+
+.descripcion ul {
+  width: 100%;
+  flex-direction: row;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.descripcion li {
+  align-self: center;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+#producto{
+  width: 40%;
+  align-items: center;
+}
+
+/*Contenido de la compra*/
+
+.contenidoDeCompra {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 65%;
+  border: 1px solid #dedede;
+}
+
+.contenidoDeCompra p {
+  margin: 0;
+}
+
+.prod {
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.prod img {
+  width: 35%;
+  height: 90%;
+}
+
+.formCantidad {
+  justify-content: center;
+  width: 16%;
+  height: 100%;
+}
+
+.formCantidad input {
+  width: 40%;
+  align-self: center;
+}
+
+.prec {
+  justify-content: center;
+  width: 16%;
+  height: 100%;
+  align-items: center;
+}
+
+.subt{
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 16%;
+  height: 100%;
+}
+
+.subt button {
+  border: none;
+}
+
+/****resumen****/
+
+.resumen {
+  width: 80%;
+  margin: 10px 0;
+  align-items: flex-start;
+}
+
+.resumen p {
+  margin-top: 10px;
+}
+
+
+/****Botones*****/
+
+.botones {
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.botones div{
+  margin-left: 40px;
+}
+
+#segcom{
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+  align-items: center;
+  color: #f7f7f7;
+  background-color: #11cbd7;
+  font-weight: bold;
+}
+
+#contcom{
+  width:150px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  font-size:15px;
+  align-items: center;
+  color: #f7f7f7;
+  background-color: #11cbd7;
+  font-weight: bold;
+}
+
+}
 

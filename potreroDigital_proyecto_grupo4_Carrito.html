@@ -18,7 +18,7 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-<!-- Google Fonts -->
+	<!-- Google Fonts -->
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
@@ -141,7 +141,7 @@
 	</header>
 
 	<main>
-		<div class="contenedorEnvios">
+		<div class="contenedorCarrito">
 
 			<div class="divBreadcrumb">
 				<ul class="menuBreadcrumb">
@@ -153,31 +153,56 @@
 				</ul>
 			</div>
 
-			<div>
-				<form id="producto1" action="potreroDigital_proyecto_grupo4_envios.html">
-					<h2>Carrito de compras</h2>
+			<h3>CARRITO DE COMPRAS</h3>
 
-					<h4>Cantidad productos en el carrito 1</h4>
+			<div class="divCarritoCompras">
 
-					<img id="prodcar1" src="images\productos\zapatilla_universal.png" alt="zapatilla_universal"> Zapatilla universal con USB
-					<input name="precio" id="precio" type="text" value="$100.00" readonly>
-					<input type="number" id="quantity" name="quantity" min="1" max="5">
-					<h5>Resumen de tu orden: </h5>
-					<h5>Sub-total productos:</h5>
-				</form>
-
-				<div class="">
-					<div class="segcom">
-						<button onclick="location.href='potreroDigital_proyecto_grupo4_Index.html'">Seguir comprando</button>
-					</div>
-
-					<div class="contcom">
-						<input id="contcom" onclick="location.href='potreroDigital_proyecto_grupo4_envios.html'" type="submit" value="Continuar con la compra">
-					</div>
+				<div class="descripcion"> 
+					<ul>
+						<li id="producto">PRODUCTO</li>
+						<li>CANTIDAD</li>
+						<li>PRECIO</li>
+						<li>SUBTOTAL</li>
+					</ul>
 				</div>
 
+				<div class="contenidoDeCompra">
+
+					<div class="prod">
+						<img src="images/productos/electronica/producto1.jpg">
+						<p> MINI CONSOLA GAME BOY </p>
+					</div>
+
+					<div class="formCantidad">
+						<input type="number" id="quantity" name="quantity" min="1" max="10">
+					</div>
+
+					<div class="prec">
+						<p>$4800</p>
+					</div>
+
+					<div class="subt">
+						<p>$4800</p>
+						<button type="button"><i class="far fa-trash-alt"></i></button>
+					</div>	
+				</div>
 			</div>
 
+			<div class="resumen">
+				<h5>Resumen de tu orden:</h5>
+				<p>SUBTOTAL: $ 4800</p>
+			</div>
+
+			<div class="botones">
+				<div>
+					<input id="segcom" onclick="location.href='potreroDigital_proyecto_grupo4_Productos.html'" type="submit" value="Seguir Comprando">
+				</div>
+
+				<div>
+					<input id="contcom" onclick="location.href='potreroDigital_proyecto_grupo4_envios.html'" type="submit" value="Iniciar Compra">
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<footer>

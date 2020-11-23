@@ -17,7 +17,8 @@
 	<!-- Font Awesome Iconos -->
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-<!-- Google Fonts -->
+
+	<!-- Google Fonts -->
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
@@ -140,7 +141,8 @@
 	</header>
 
 	<main>
-		<div class="contenedorEnvios">
+
+		<div class="contenedorPagos">
 
 			<div class="divBreadcrumb">
 				<ul class="menuBreadcrumb">
@@ -152,160 +154,127 @@
 				</ul>
 			</div>		
 
-			<form id="formenvio" action="potreroDigital_proyecto_grupo4_Index.html">
+			<h3>MEDIOS DE PAGO</h3>
 
-				<div class="Pago">
-					
-					<fieldset>
-						<p>
-							<legend>Ingresar cupón</legend>
-							<input id="desc" type="text" name="desc">
-							<input id="botondesc" type="submit" value="Ingresar">
-						</p>		
-					</fieldset>		
+			<div class="divPagos">
+				<div class="cupon">
+					<h5>Ingresar cupón</h5>
+					<div>
+						<input id="desc" type="text" name="desc">
+						<input id="botondesc" type="submit" value="Ingresar">	
+					</div>
+				</div>
+				<div class="tarjeta">
+					<div class="selecTarjeta">
+						<input type="radio" name="tipopago" value="tarjeta" onclick="  mostrarDivTarjeta()">
+						<label for="trajeta">Tarjeta de Credito / Debito</label>
+					</div>		
+					<div id="tarjetaOculto">
+						<div class="fila">
+							<label id="banco">Banco:
+								<select  name="banco">
+									<option value="Galicia">Galicia</option>
+									<option value="Santander">Santander</option>
+									<option value="Frances">Frances</option>
+									<option value="Provincia">Provincia</option>
+									<option value="Nacion">Nacion</option>
+									<option value="Patagonia">Patagonia</option>
+									<option value="Ciudad">Ciudad</option>
+								</select>
+								<span id="bancoPrompt"></span>
+							</label>
 
-							<fieldset>
-								<legend>
-									<input type="radio" class="fondo-form" name="tipopago" value="tarjeta">Tarjeta de Credito / Debito
-								</legend>
-								<p>
-									<label>Banco:<br>
-										<input  type="text" class="fondo-form" id="banco" onblur="validarbanco();">
-										<span id="bancoPrompt"></span>
-									</label>
-								</p>
+							<label id="entidad">Tarjeta:
+								<select  name="entidad">
+									<option value="visa">Visa</option>
+									<option value="Master">Mastercard</option>
+									<option value="American">American</option>
+									<option value="Cabal">Cabal</option>
+									<option value="Naranja">Naranja</option>
+								</select>
+								<span id="entidadPrompt"></span>
+							</label>
 
-								<p>
-							 		<label>Vencimiento:
-										<input type="month" class="fondo-form" id="venc" name="venc" onblur="validarvenc();">
-										<span id="vencPrompt"></span>
-									</label>
-								</p>
+							<label id="cuotas">Cuotas:
+								<select  name="Cuotas">
+									<option value="Una">1 Cuota</option>
+									<option value="Tres">3 Cuotas</option>
+									<option value="Seis">6 Cuotas</option>
+									<option value="Doce">12 Cuotas</option>
+								</select>
+							</label>
 
-								<p>
-									<label>Nombre titular:<br>
-										<input  type="text" class="fondo-form" id="nomtitular" onblur="validarnomtitular();">
-										<span id="nomtitularPrompt"></span>
-									</label>
-								</p>
-
-								<p>
-							 		<label>Nro Tarjeta:
-										<input type="number" class="fondo-form" id="numtarj" name="numtarj" onblur="validarnumtarj();">
-										<span id="numtarjPrompt"></span>
-									</label>
-								</p>
-
-								<p>
-									<label>Codigo seguridad:<br>
-										<input  type="number" class="fondo-form" id="cod" onblur="validarcod();">
-										<span id="codPrompt"></span>
-									</label>
-								</p>
-
-								<p>
-									<label>Cuotas:
-										<select id="cuotas" name="Cuotas">
-										 	<option value="Una">1 Cuota</option>
-										 	<option value="Tres">3 Cuotas</option>
-										 	<option value="Seis">6 Cuotas</option>
-										 	<option value="Doce">12 Cuotas</option>
-									 	</select>
-									 </label>
-								</p>
-
-							</fieldset>
-
-							<fieldset>
-								<legend>
-									<input type="radio" class="fondo-form" name="tipopago" value="efectivo">Pago en efectivo / Rapipago
-								</legend>
-
-								<p>
-									<label>Nombre:<br>
-										<input  type="text" class="fondo-form" id="nombre" onblur="validarnombre();">
-										<span id="nombrePrompt"></span>
-									</label>
-								</p>
-
-								<p>
-							 		<label>Apellido:
-										<input type="text" class="fondo-form" id="apellido" name="apellido" onblur="validarapellido();">
-										<span id="apellidoPrompt"></span>
-									</label>
-								</p>
-
-								<p>
-							 		<label>	DNI:
-										<input type="number" class="fondo-form" id="dni" name="dni" onblur="validardni();">
-										<span id="dniPrompt"></span>
-									</label>
-								</p>
-
-								<p>
-									<label>Telefono:
-										<input name="telefono" id="telefono" type="text" onblur="validartelefono();">
-										<span id="telefonoPrompt"></span>
-									</label>
-								</p>
-
-								<p>
-									<label>	Calle:
-										<input type="text" class="fondo-form" id="calle" name="calle" onblur="validarcalle();">
-										<span id="callePrompt"></span>
-									</label>
-								</p>
-
-								<p>
-									<label>Numero:
-										<input type="number" class="fondo-form" id="numero" name="numero" onblur="validarnumero();">
-										<span id="numeroPrompt"></span>
-									</label>
-								</p>
-
-								<p>
-									<label>Provincia
-										<select id="provincia" name="Provincia">
-											<option value="Buenos_Aires">Buenos Aires</option>
-											<option value="Catamarca">Catamarca</option>
-											<option value="Chaco">Chaco</option>
-											<option value="Chubut">Chubut</option>
-											<option value="Cordoba">Córdoba</option>
-											<option value="Corrientes">Corrientes</option>
-											<option value="Entre_Ríos">Entre Ríos</option>
-											<option value="Formosa">Formosa</option>
-											<option value="Jujuy">Jujuy</option>
-											<option value="La_Pampa">La Pampa</option>
-											<option value="La_Rioja">La Rioja</option>
-											<option value="Mendoza">Mendoza</option>
-											<option value="Misiones">Misiones</option>
-											<option value="Neuquen">Neuquén</option>
-											<option value="Rio_Negro">Río Negro</option>
-											<option value="Salta">Salta</option>
-											<option value="San_Juan">San Juan</option>
-											<option value="San_Luis">San Luis</option>
-											<option value="Santa_Cruz">Santa Cruz</option>
-											<option value="Santa_Fe">Santa Fe</option>
-											<option value="Santiago_del_Estero">Santiago del Estero</option>
-											<option value="Tierra_del_Fuego">Tierra del Fuego</option>
-											<option value="Tucuman">Tucumán</option>
-										</select>
-									</label>
-								</p>
-
-								<p>
-									<label>Ciudad:
-										<input type="text" class="fondo-form" id="ciudad" name="cuidad" onblur="validarcuidad();"></td>
-										<span id="cuidadPrompt"></span>
-									</label>
-								</p>
-							</fieldset>
 						</div>
-						
-			</form>
+
+						<div class="filaNombre">
+							<label id="nomtitular">Nombre del titular:<br>
+								<input  type="text" onblur="validarnomtitular();">
+								<span id="nomtitularPrompt"></span>
+							</label>
+						</div>
+
+						<div class="filaNro">
+							<label  id="numtarj">Numero de Tarjeta:
+								<input type="text" name="numtarj" onblur="validarnumtarj();">
+								<span id="numtarjPrompt"></span>
+							</label>
+
+							<label id="cod">Codigo de seguridad:<br>
+								<input  type="password"  onblur="validarcod();">
+								<span id="codPrompt"></span>
+							</label>
+						</div>
+				
+						<div class="filaVenc">
+							<label id="venc">Fecha de Vencimiento:
+								<input type="month"  name="venc" onblur="validarvenc();">
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="rapiPagoFacil">
+					<div class="selecRapi">
+						<input type="radio" name="tipopago" value="rapiPago" onclick="  mostrarDivRapi()">
+						<label for="trajeta">Pago Facil / Rapipago</label>
+					</div>	
+
+					<div id="rapiOculto">
+
+						<p>Te redireccionaremos al sitio de MercadoPago, donde podrás elegir uno de los medios de pago debajo.</p>
+						<br>
+						<p>Rapipago o Pago fácil</p>
+
+						<div class="medioPago">
+							<a href="https://www.mercadopago.com.ar/home" target="_blank"><img src="images/mediosDePago/rapipago.png"></a>
+							<a href="https://www.mercadopago.com.ar/home" target="_blank"><img src="images/mediosDePago/pagoFacil.png"></a>
+						</div>
+					</div>					
+
+				</div>
+
+				<div class="convenir">
+					<div class="selecConvenir">
+						<input type="radio" name="tipopago" value="convenir" onclick=" mostrarDivConv()">
+						<label for="aconvenir">Pago a Convenir</label>
+					</div>
+
+					<div id="convenirOculto">
+						<p>Cuando termines la compra te enviaremos un e-mail con la información de pago</p>
+					</div>
+				</div>
 			
-			<input id="botonfin" type="submit" value="Finalizar Compra">
-					
+			</div>
+			<div class="botones">
+				<div id="volver" onclick="location.href='potreroDigital_proyecto_grupo4_Carrito.html'" >
+					<i class="fas fa-arrow-left"></i> 
+					<input type="submit" value="Volver"> 
+				</div>
+				<div id="finalizar" onclick="finalizaCompra()">
+					<input  type="submit" value="Finalizar Compra">
+				</div>
+			</div>
+
 		</div>
 	
 	</main>
@@ -371,7 +340,6 @@
 						<div class="botonSuscribite">
 							<button type="button" name="Suscribite" id="btnSuscribite" onclick="suscribite()">Suscribite</button>
 						</div>
-
 					</form>
 			</div>
 		</div>
@@ -394,4 +362,5 @@
 
 </body>
 </html>
+
 

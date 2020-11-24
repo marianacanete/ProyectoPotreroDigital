@@ -215,6 +215,15 @@ p a {
     padding: 5px;
 }
 
+#btnIniciarSesion:hover {
+    background-color: #67DDE5;
+}
+
+.botonIniciarSesion a:hover {
+    text-decoration: none;
+}
+
+
 }
 
 /*****************************************************************/

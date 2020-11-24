@@ -124,6 +124,15 @@ hr {
     border:none;
     padding: 5px;
     font-size: 0.9em;
+    text-decoration:none;
+}
+
+#btnRegistro:hover {
+    background-color: #67DDE5;
+}
+
+.botonRegistrarse a:hover {
+    text-decoration: none;
 }
 
 /*Inicia Sesion*/
@@ -256,6 +265,7 @@ hr {
 }
 
 /*Boton Registrarse*/
+
 .botonRegistrarse{
     flex-direction: row;
     justify-content: center;
@@ -272,6 +282,14 @@ hr {
     border:none;
     padding: 5px;
     font-size: 0.9em;
+}
+
+#btnRegistro:hover {
+    background-color: #67DDE5;
+}
+
+.botonRegistrarse a:hover {
+    text-decoration: none;
 }
 
 /*Inicia Sesion*/

@@ -141,9 +141,7 @@
 	</header>
 
 	<main>
-
 		<div class="contenedorPagos">
-
 			<div class="divBreadcrumb">
 				<ul class="menuBreadcrumb">
 					<li>
@@ -153,9 +151,7 @@
 					<li>Medios de Pago</li>
 				</ul>
 			</div>		
-
 			<h3>MEDIOS DE PAGO</h3>
-
 			<div class="divPagos">
 				<div class="cupon">
 					<h5>Ingresar cupón</h5>
@@ -183,7 +179,6 @@
 								</select>
 								<span id="bancoPrompt"></span>
 							</label>
-
 							<label id="entidad">Tarjeta:
 								<select  name="entidad">
 									<option value="visa">Visa</option>
@@ -194,7 +189,6 @@
 								</select>
 								<span id="entidadPrompt"></span>
 							</label>
-
 							<label id="cuotas">Cuotas:
 								<select  name="Cuotas">
 									<option value="Una">1 Cuota</option>
@@ -203,28 +197,25 @@
 									<option value="Doce">12 Cuotas</option>
 								</select>
 							</label>
-
 						</div>
-
 						<div class="filaNombre">
-							<label id="nomtitular">Nombre del titular:<br>
+							<label id="nomtitular">Nombre del titular:
+								<br>
 								<input  type="text" onblur="validarnomtitular();">
 								<span id="nomtitularPrompt"></span>
 							</label>
 						</div>
-
 						<div class="filaNro">
 							<label  id="numtarj">Numero de Tarjeta:
 								<input type="text" name="numtarj" onblur="validarnumtarj();">
 								<span id="numtarjPrompt"></span>
 							</label>
-
-							<label id="cod">Codigo de seguridad:<br>
+							<label id="cod">Codigo de seguridad:
+								<br>
 								<input  type="password"  onblur="validarcod();">
 								<span id="codPrompt"></span>
 							</label>
-						</div>
-				
+						</div>		
 						<div class="filaVenc">
 							<label id="venc">Fecha de Vencimiento:
 								<input type="month"  name="venc" onblur="validarvenc();">
@@ -232,38 +223,34 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="rapiPagoFacil">
 					<div class="selecRapi">
 						<input type="radio" name="tipopago" value="rapiPago" onclick="  mostrarDivRapi()">
 						<label for="trajeta">Pago Facil / Rapipago</label>
 					</div>	
-
 					<div id="rapiOculto">
-
 						<p>Te redireccionaremos al sitio de MercadoPago, donde podrás elegir uno de los medios de pago debajo.</p>
 						<br>
 						<p>Rapipago o Pago fácil</p>
-
 						<div class="medioPago">
-							<a href="https://www.mercadopago.com.ar/home" target="_blank"><img src="images/mediosDePago/rapipago.png"></a>
-							<a href="https://www.mercadopago.com.ar/home" target="_blank"><img src="images/mediosDePago/pagoFacil.png"></a>
+							<a href="https://www.mercadopago.com.ar/home" target="_blank">
+								<img src="images/mediosDePago/rapipago.png">
+							</a>
+							<a href="https://www.mercadopago.com.ar/home" target="_blank">
+								<img src="images/mediosDePago/pagoFacil.png">
+							</a>
 						</div>
 					</div>					
-
 				</div>
-
 				<div class="convenir">
 					<div class="selecConvenir">
 						<input type="radio" name="tipopago" value="convenir" onclick=" mostrarDivConv()">
 						<label for="aconvenir">Pago a Convenir</label>
 					</div>
-
 					<div id="convenirOculto">
 						<p>Cuando termines la compra te enviaremos un e-mail con la información de pago</p>
 					</div>
-				</div>
-			
+				</div>		
 			</div>
 			<div class="botones">
 				<div id="volver" onclick="location.href='potreroDigital_proyecto_grupo4_Carrito.html'" >
@@ -274,10 +261,8 @@
 					<input  type="submit" value="Finalizar Compra">
 				</div>
 			</div>
-
 		</div>
-	
-	</main>
+		</main>
 
 	<footer>
 

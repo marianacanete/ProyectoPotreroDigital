@@ -209,6 +209,13 @@
   font-weight: bold;
 }
 
+#volver:hover {
+    background-color: #67DDE5;
+}
+
+#seguir:hover {
+    background-color: #67DDE5;
+}
 
 }
 
@@ -639,6 +646,14 @@
   color: #f7f7f7;
   background-color: #11cbd7;
   font-weight: bold;
+}
+
+#volver:hover {
+    background-color: #67DDE5;
+}
+
+#seguir:hover {
+    background-color: #67DDE5;
 }
 }
 

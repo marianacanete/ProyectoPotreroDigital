@@ -142,9 +142,7 @@
 	</header>
 
 	<main>
-	
 		<div class="contenedorEnvios">
-			
 			<div class="divBreadcrumb">
 				<ul class="menuBreadcrumb">
 					<li>
@@ -154,9 +152,7 @@
 					<li>Envios</li>
 				</ul>
 			</div>
-
 			<h3>ENTREGAS</h3>
-
 			<div class="divFormEnvios">
 				<div class="tipoEnvio">
 					<h5>Envios a Domicilio</h5>
@@ -176,98 +172,88 @@
 						</div>
 						<h6>Retiras en el local</h6>
 						<p>	Callefalsa 123 CABA - Horario a convenir: comunicarse por tel al +549 0303-456 para coordinar.</p>
-					</div>
-					
+					</div>				
 				</div>
-							
 				<div class="containerCampos">
-						<h5>Datos del Envio</h5>
-
-						<div class="campos">
-
-							<div class="fila">
-								<label id="nombre" >Nombre:<br>
-									<input  type="text" onblur="validarnombre();" placeholder="Ingrese su nombre">
-									<span id="nombrePrompt"></span>
-								</label>
-				 				<label id="apellido">Apellido:
-									<input type="text"  name="apellido" onblur="validarapellido();" placeholder="Ingrese su apellido">
-									<span id="apellidoPrompt"></span>
-								</label>
-							</div>
-
-							<div class="fila">
-				 				<label id="dni">	DNI:
-									<input type="text"  name="dni" onblur="validardni();" placeholder="Nro de DNI">
-									<span id="dniPrompt"></span>
-								</label>
-								<label id="telefono">Telefono:
-									<input name="telefono"  type="tel" onblur="validartelefono();" placeholder="(Código de área) Número)">
-									<span id="telefonoPrompt"></span>
-								</label>
-							</div>
-
-							<div class="fila">
-								<label id="calle">	Calle:
-									<input type="text"  name="calle" onblur="validarcalle();" placeholder="Ingrese su domicilio">
-									<span id="callePrompt"></span>
-								</label>
-							</div>
-
-							<div class="filaDetalleDir">
-								<label>Numero:
-									<input type="text"  name="numero" onblur="validarnumero();" placeholder="Nro">
-									<span id="numeroPrompt"></span>
-								</label>
-								<label>	Piso:
-									<input type="text"  name="piso" onblur="validarpiso();" placeholder="Piso">
-									<span id="pisoPrompt"></span>
-								</label>
-								<label>Depto:
-									<input type="text"  name="dpto" onblur="validardpto();" placeholder="Dpto">
-									<span id="dptoPrompt"></span>
-								</label>
-							</div>
-
-							<div class="fila">
-								<label id= "provincia">Provincia
-									<select  name="Provincia">
-										<option value="Buenos_Aires">Buenos Aires</option>
-										<option value="Catamarca">Catamarca</option>
-										<option value="Chaco">Chaco</option>
-										<option value="Chubut">Chubut</option>
-										<option value="Cordoba">Córdoba</option>
-										<option value="Corrientes">Corrientes</option>
-										<option value="Entre_Ríos">Entre Ríos</option>
-										<option value="Formosa">Formosa</option>
-										<option value="Jujuy">Jujuy</option>
-										<option value="La_Pampa">La Pampa</option>
-										<option value="La_Rioja">La Rioja</option>
-										<option value="Mendoza">Mendoza</option>
-										<option value="Misiones">Misiones</option>
-										<option value="Neuquen">Neuquén</option>
-										<option value="Rio_Negro">Río Negro</option>
-										<option value="Salta">Salta</option>
-										<option value="San_Juan">San Juan</option>
-										<option value="San_Luis">San Luis</option>
-										<option value="Santa_Cruz">Santa Cruz</option>
-										<option value="Santa_Fe">Santa Fe</option>
-										<option value="Santiago_del_Estero">Santiago del Estero</option>
-										<option value="Tierra_del_Fuego">Tierra del Fuego</option>
-										<option value="Tucuman">Tucumán</option>
-									</select>
-								</label>
-								<label>Ciudad:
-									<input type="text" class="fondo-form" id="ciudad" name="cuidad" onblur="validarcuidad();" placeholder="Opcional">
-									<span id="cuidadPrompt"></span>
-								</label>
-							</div>
+					<h5>Datos del Envio</h5>
+					<div class="campos">
+						<div class="fila">
+							<label id="nombre" >Nombre:
+								<br>
+								<input  type="text" onblur="validarnombre();" placeholder="Ingrese su nombre">
+								<span id="nombrePrompt"></span>
+							</label>
+			 				<label id="apellido">Apellido:
+								<input type="text"  name="apellido" onblur="validarapellido();" placeholder="Ingrese su apellido">
+								<span id="apellidoPrompt"></span>
+							</label>
+						</div>
+						<div class="fila">
+			 				<label id="dni">	DNI:
+								<input type="text"  name="dni" onblur="validardni();" placeholder="Nro de DNI">
+								<span id="dniPrompt"></span>
+							</label>
+							<label id="telefono">Telefono:
+								<input name="telefono"  type="tel" onblur="validartelefono();" placeholder="(Código de área) Número)">
+								<span id="telefonoPrompt"></span>
+							</label>
+						</div>
+						<div class="fila">
+							<label id="calle">	Calle:
+								<input type="text"  name="calle" onblur="validarcalle();" placeholder="Ingrese su domicilio">
+								<span id="callePrompt"></span>
+							</label>
+						</div>
+						<div class="filaDetalleDir">
+							<label>Numero:
+								<input type="text"  name="numero" onblur="validarnumero();" placeholder="Nro">
+								<span id="numeroPrompt"></span>
+							</label>
+							<label>	Piso:
+								<input type="text"  name="piso" onblur="validarpiso();" placeholder="Piso">
+								<span id="pisoPrompt"></span>
+							</label>
+							<label>Depto:
+								<input type="text"  name="dpto" onblur="validardpto();" placeholder="Dpto">
+								<span id="dptoPrompt"></span>
+							</label>
+						</div>
+						<div class="fila">
+							<label id= "provincia">Provincia
+								<select  name="Provincia">
+									<option value="Buenos_Aires">Buenos Aires</option>
+									<option value="Catamarca">Catamarca</option>
+									<option value="Chaco">Chaco</option>
+									<option value="Chubut">Chubut</option>
+									<option value="Cordoba">Córdoba</option>
+									<option value="Corrientes">Corrientes</option>
+									<option value="Entre_Ríos">Entre Ríos</option>
+									<option value="Formosa">Formosa</option>
+									<option value="Jujuy">Jujuy</option>
+									<option value="La_Pampa">La Pampa</option>
+									<option value="La_Rioja">La Rioja</option>
+									<option value="Mendoza">Mendoza</option>
+									<option value="Misiones">Misiones</option>
+									<option value="Neuquen">Neuquén</option>
+									<option value="Rio_Negro">Río Negro</option>
+									<option value="Salta">Salta</option>
+									<option value="San_Juan">San Juan</option>
+									<option value="San_Luis">San Luis</option>
+									<option value="Santa_Cruz">Santa Cruz</option>
+									<option value="Santa_Fe">Santa Fe</option>
+									<option value="Santiago_del_Estero">Santiago del Estero</option>
+									<option value="Tierra_del_Fuego">Tierra del Fuego</option>
+									<option value="Tucuman">Tucumán</option>
+								</select>
+							</label>
+							<label>Ciudad:
+								<input type="text" class="fondo-form" id="ciudad" name="cuidad" onblur="validarcuidad();" placeholder="Opcional">
+								<span id="cuidadPrompt"></span>
+							</label>
 						</div>
 					</div>
-
-					
+				</div>				
 			</div>
-
 			<div class="botones">
 				<div id="volver" onclick="location.href='potreroDigital_proyecto_grupo4_Carrito.html'" >
 					<i class="fas fa-arrow-left"></i> 

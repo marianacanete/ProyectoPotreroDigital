@@ -3,7 +3,7 @@
 
 /****general****/
 
-* {
+*{
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
@@ -78,6 +78,10 @@ body {
     margin: 0 10px;
 }
 
+#iniciarSesion:hover {
+    color: #67DDE5;
+}
+
 /*carrito*/
 
 #carrito {
@@ -86,6 +90,10 @@ body {
     text-decoration: none;
     color: #11cbd7;
     justify-content: center;  
+}
+
+#carrito:hover {
+    color: #67DDE5;
 }
 
 /*buscador*/
@@ -122,10 +130,12 @@ body {
     transition: 0.4s;
     text-decoration: none;
     color: #11cbd7;
-    margin: 0;
-    color: #11cbd7;
     margin: 0 10px;
     background-color: transparent;
+}
+
+#btn_Buscador:hover {
+    color: #67DDE5;
 }
 
 /****Navbar****/
@@ -219,7 +229,7 @@ footer h6 {
     color: #ffffff;
     padding: 10px 5px;
     width: 25%;
-    font-size: 0.5em;
+    font-size: 0.6em;
 }
 
 #divContacto li {
@@ -244,13 +254,17 @@ footer h6 {
     color: #ffffff;
     padding: 10px 0;
     width: 10%;
-    font-size: 0.7em;
+    font-size: 0.6em;
  }
 
  #divRedesSociales a {
     text-decoration: none;
     color: #11cbd7;
     padding: 5px 0 0 5px;
+}
+
+#divRedesSociales a :hover {
+    color: #CDF4F6;
 }
 
 /*newsletter*/
@@ -260,6 +274,8 @@ footer h6 {
     padding: 10px;
     width: 25%;
     color: #ffffff;
+    font-size: 0.8em;
+
 }
 
 #divNewsletter input {
@@ -268,7 +284,7 @@ footer h6 {
 
 #inputEmail {
     padding-left: 5px;
-    font-size: 0.5em;
+    font-size: 0.7em;
     width: 100%;
     align-self: center;
 }
@@ -281,16 +297,20 @@ footer h6 {
     width: 100%;
 }
 
-#btnSuscribite{
+#btnSuscribite {
     justify-content: center;
     height:28px;
-    font-size: 0.6em;
+    font-size: 0.7em;
     color: #f7f7f7;
     background-color: #11cbd7;
     border-radius: 6px;
     font-weight: bold;
     border:none;
     padding: 5px;
+}
+
+#btnSuscribite:hover {
+    background-color: #67DDE5;
 }
 
 #graciasPorSuscribirte {
@@ -422,6 +442,10 @@ body {
     margin: 0 10px;
 }
 
+#iniciarSesion:hover {
+    color: #67DDE5;
+}
+
 /*carrito*/
 
 #carrito {
@@ -430,6 +454,10 @@ body {
     text-decoration: none;
     color: #11cbd7;
     justify-content: center;  
+}
+
+#carrito:hover {
+    color: #67DDE5;
 }
 
 /*buscador*/
@@ -592,10 +620,14 @@ footer h6 {
     font-size: 0.8em;
  }
 
- #divRedesSociales a {
+#divRedesSociales a {
     text-decoration: none;
     color: #11cbd7;
     padding: 5px 0 0 5px;
+}
+
+#divRedesSociales a :hover {
+    color: #CDF4F6;
 }
 
 /*newsletter*/
@@ -638,6 +670,10 @@ footer h6 {
     padding: 5px;
 }
 
+#btnSuscribite:hover {
+    background-color: #67DDE5;
+}
+
 #graciasPorSuscribirte {
     display: none;
     font-size: 0.8em;
@@ -660,6 +696,7 @@ footer h6 {
     width: 100%;
     padding: 0 10px;
 }
+
 .copyright p{
     flex-direction: row;
     justify-content: center;
@@ -667,15 +704,16 @@ footer h6 {
     color: #ffffff;
     margin:0;
 }
+
 #irArriba {
     font-size: 30px;
     text-decoration: none;
     color: #ffffff;
 }
+
 #irArriba:hover {
     color: #000000;
 }
-
 
 }
 
@@ -750,6 +788,10 @@ footer h6 {
     justify-content: center;  
 }
 
+#carrito:hover {
+    color: #67DDE5;
+}
+
 /*buscador*/
 
 .buscador {
@@ -788,6 +830,10 @@ footer h6 {
     color: #11cbd7;
     margin: 0 10px;
     background-color: transparent;
+}
+
+#btn_Buscador:hover {
+    color: #000000;
 }
 
 /****Navbar****/
@@ -1166,7 +1212,6 @@ footer h6 {
     font-size: 15px;
 }
 
-
 /*contacto*/
 
 #divContacto {
@@ -1290,6 +1335,10 @@ footer h6 {
     line-height: 2;
     font-weight: bold;
     width: 60%;
+}
+
+.menuInicio li>a:hover {
+    background-color: #67DDE5;
 }
 
 /*logo*/
@@ -1459,7 +1508,6 @@ footer h6 {
 
 #divMapaSitio a:hover {
     text-shadow: 1.5px 1.5px #000000;
-
 }
 
 /* redes sociales */

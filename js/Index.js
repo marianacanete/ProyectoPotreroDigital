@@ -23,6 +23,24 @@
 		}
 	};
 
+	/*INICIAR SESION*/
+
+	function inicioSesion() {
+
+		var num = document.getElementById("email").value.indexOf("@");
+		var email = document.getElementById("email").value;
+		
+		if (num == -1 ) {
+
+			alert("Ingresa tu e-mail");
+		}
+
+		else {
+			alert ("Inicia Sesion");
+			
+		}
+	};
+
 /*MOSTRAR CARTEL AL SUSCRIBIRSE*/
 
 	function suscribite() {

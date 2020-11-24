@@ -101,14 +101,8 @@ hr {
     height: 1px;
 }
 
-/**Formulario**/
 
-.formulario {
-    margin-top: 10px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
+/**Formulario**/
 
 .formularioContacto {
     justify-content: space-around;
@@ -116,15 +110,55 @@ hr {
     width: 70%
 }
 
-.formularioContacto label {
+.divForm label {
     margin: 0 !important;
     padding-bottom: 5px;
     font-size: 0.8em;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.formularioContacto input {
+.divInput {
+    flex-direction: row;
+    position: relative;
+}
+
+.divInput input {
+    width: 100%;
+    margin-bottom: 10px;
     font-size: 0.7em;
     padding: 4px 0;
+    border: 2px solid  #eaeaea;
+    border-radius: 3px;
+    height: 35px;
+    transition: .3s ease all;
+}
+
+.divInput input:focus {
+    border: 2px solid  #00b5ff;
+    outline: none;
+    box-shadow: 2px 0 30px #a3a3a3;
+}
+
+.inputError {
+    font-size: 0.7em;
+    margin: 0;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.inputError-activo {
+    display: inline-block;
+}
+
+.iconoValidacion {
+    position: absolute;
+    align-self: center;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+    font-size: 0.9em;
+    opacity: 0;
 }
 
 .divFormComentario {
@@ -132,8 +166,47 @@ hr {
     justify-content: center;
 }
 
-.divFormComentario  textarea{
+.divInput  textarea {
     height: 70%;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 0.7em;
+    padding: 4px 0;
+    border: 2px solid  #eaeaea;
+    border-radius: 3px;
+    height: 35px;
+    transition: .3s ease all;
+}
+
+.divInput textarea:focus {
+    border: 2px solid  #00b5ff;
+    outline: none;
+    box-shadow: 2px 0 30px #a3a3a3;
+}
+
+.mensaje {
+    justify-content: center;
+    height: 45px;
+    background-color: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.mensaje-activo {
+    display: inline-block;
+}
+
+.mensaje p i {
+    align-self: center;  
+    padding-right: 5px;
+}
+
+.mensaje p {
+    align-self: center;
+    flex-direction: row;
+    margin: 0;
+    font-size: 0.9em;
 }
 
 /*boton enviar*/
@@ -272,28 +345,61 @@ hr {
 
 /**Formulario**/
 
-.formulario {
-    margin-top: 10px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
 .formularioContacto {
     justify-content: space-around;
     height: 100%;
     width: 70%
 }
 
-.formularioContacto label {
+.divForm label {
     margin: 0 !important;
     padding-bottom: 5px;
     font-size: 0.8em;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.formularioContacto input {
+.divInput {
+    flex-direction: row;
+    position: relative;
+}
+
+.divInput input {
+    width: 100%;
+    margin-bottom: 10px;
     font-size: 0.7em;
     padding: 4px 0;
+    border: 2px solid  #eaeaea;
+    border-radius: 3px;
+    height: 35px;
+    transition: .3s ease all;
+}
+
+.divInput input:focus {
+    border: 2px solid  #00b5ff;
+    outline: none;
+    box-shadow: 2px 0 30px #a3a3a3;
+}
+
+.inputError {
+    font-size: 0.7em;
+    margin: 0;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.inputError-activo {
+    display: inline-block;
+}
+
+.iconoValidacion {
+    position: absolute;
+    align-self: center;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+    font-size: 0.9em;
+    opacity: 0;
 }
 
 .divFormComentario {
@@ -301,8 +407,67 @@ hr {
     justify-content: center;
 }
 
-.divFormComentario  textarea{
+.divInput  textarea {
     height: 70%;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 0.7em;
+    padding: 4px 0;
+    border: 2px solid  #eaeaea;
+    border-radius: 3px;
+    height: 35px;
+    transition: .3s ease all;
+}
+
+.divInput textarea:focus {
+    border: 2px solid  #00b5ff;
+    outline: none;
+    box-shadow: 2px 0 30px #a3a3a3;
+}
+
+.mensaje {
+    justify-content: center;
+    height: 45px;
+    background-color: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.mensaje-activo {
+    display: inline-block;
+}
+
+.mensaje p i {
+    align-self: center;  
+    padding-right: 5px;
+}
+
+.mensaje p {
+    align-self: center;
+    flex-direction: row;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/********VALIDACIONES*************/
+
+.divForm-correcto .iconoValidacion {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.divForm-incorrecto label {
+    color: #bb2929;
+}
+
+.divForm-incorrecto .iconoValidacion {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.divForm-incorrecto input {
+    border: 2px solid #bb2929;
 }
 
 /*boton enviar*/

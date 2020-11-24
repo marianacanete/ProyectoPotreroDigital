@@ -90,7 +90,7 @@
 		};
 		
 		return true;
-};
+	};
 
 /*CARTEL MENSAJE ENVIADO*/
 
@@ -116,10 +116,9 @@
 		else {
 
 			alert ("Hemos recibido su mensaje. En breve le responderemos. Gracias");
-		}
-		
+		}	
 
-};
+	};
 
 /*MOSTRAR DIV OCULTO*/
 
@@ -135,7 +134,7 @@
 			rapi.style.display = 'none';
 			conv.style.display = 'none';
 		};
-};
+	};
 
 	function mostrarDivRapi () {
 		
@@ -149,7 +148,7 @@
 			tarjeta.style.display = 'none';
 			conv.style.display = 'none';
 		};
-};
+	};
 
 
 	function mostrarDivConv() {
@@ -164,7 +163,7 @@
 			rapi.style.display = 'none';
 			tarjeta.style.display = 'none';
 		};
-};
+	};
 
 /*MOSTRAR DIV OCULTO*/
 
@@ -184,3 +183,47 @@
 
 	};
 
+
+/*VALIDACIONES CONTACTO*/
+
+const formularioContacto = document.getElementById('formulario');
+const inputsContacto = document.querySelectorAll ('#formulario input textarea');
+
+const expresiones = {
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	telefono: /^\d{7,14}$/, 
+	comentario: /^[a-zA-Z0-9-ZÀ-ÿ\s]{1,40}$/, 
+}
+
+const validarFomulario = (e) => {
+	switch (e.target.name) {
+		case "nombre":
+
+			if (expresiones.nombre.test())
+
+		break;
+
+		case "email":
+
+		break;
+
+		case "telefono":
+
+		break;
+
+		case "comentario":
+
+		break;
+	}
+
+}
+
+inputsContacto.forEach( (input) => {
+	input.addEventListener('keyup', validarFomulario);
+	input.addEventListener('blur', validarFomulario);
+});
+
+formularioContacto.addEventListener ('submit', (e) => {
+	e.preventDefault();
+});

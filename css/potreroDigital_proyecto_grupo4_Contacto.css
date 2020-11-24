@@ -166,6 +166,14 @@ hr {
     justify-content: center;
 }
 
+.divFormComentario label {
+    margin: 0 !important;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .divInput  textarea {
     height: 70%;
     width: 100%;
@@ -207,6 +215,26 @@ hr {
     flex-direction: row;
     margin: 0;
     font-size: 0.9em;
+}
+
+/********VALIDACIONES*************/
+
+.divForm-correcto .iconoValidacion {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.divForm-incorrecto label {
+    color: #bb2929;
+}
+
+.divForm-incorrecto .iconoValidacion {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.divForm-incorrecto input {
+    border: 2px solid #bb2929;
 }
 
 /*boton enviar*/
@@ -407,6 +435,14 @@ hr {
     justify-content: center;
 }
 
+.divFormComentario label {
+    margin: 0 !important;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .divInput  textarea {
     height: 70%;
     width: 100%;
@@ -469,7 +505,6 @@ hr {
 .divForm-incorrecto input {
     border: 2px solid #bb2929;
 }
-
 /*boton enviar*/
 
 .divButton {

@@ -13,17 +13,13 @@
 		var email = document.getElementById("email").value;
 
 		if (num == -1 ) {
-
 			alert("No es un e-mail valido!");
-		}
-
-		else {
-
+		} else {
 			alert("¡Listo! Te enviamos un email a " + email);
 		}
 	};
 
-	/*INICIAR SESION*/
+/*INICIAR SESION*/
 
 	function inicioSesion() {
 
@@ -31,13 +27,9 @@
 		var email = document.getElementById("email").value;
 		
 		if (num == -1 ) {
-
 			alert("Ingresa tu e-mail");
-		}
-
-		else {
-			alert ("Inicia Sesion");
-			
+		} else {
+			alert ("Inicia Sesion");		
 		}
 	};
 
@@ -51,22 +43,15 @@
 		if (num == -1 ) {
 
 			alert("No es un e-mail valido!");
-		}
-
-		else {
-
-			
+		} else {
 			document.getElementById("graciasPorSuscribirte").style.display = 'inline-block';
-
 		}
 	};
 
 /*MOSTRAR EL INPUT BUSCADOR*/
 
 	function mostrarBuscador() {
-
 		document.getElementById("inputBuscador").style.display = 'inline-block';
-
 	};
 
 /*DESPLEGAR MENU CATEGORIAS*/
@@ -75,50 +60,17 @@
 		
 		var div = document.getElementById("categoriasResponsive");
 			
-		if(!div) {
-			
+		if(!div) {			
 		return true;
 		}
-
-		if (div.style.display == "none") {
-			
+		if (div.style.display == "none") {			
 			div.style.display = "inline-block";
-
-		} else {
-			
+		} else {			
 			div.style.display = "none";
-		};
-		
+		};		
 		return true;
 	};
 
-/*CARTEL MENSAJE ENVIADO*/
-
-	function mensajeEnviado () {
-		var nombre =  document.getElementById("nombre");
-		var num = document.getElementById("email").value.indexOf("@");
-		var email = document.getElementById("email").value;
-		var telefono = document.getElementById("telefono").value;
-		var comentario = document.getElementById("comentario").value; 
-
-		
-		if  (nombre == null) {
-			
-			alert("Ingrese un nombre válido");
-
-			if (num == -1 ) {
-
-			alert("No es un e-mail valido!");
-
-			}
-		}
-
-		else {
-
-			alert ("Hemos recibido su mensaje. En breve le responderemos. Gracias");
-		}	
-
-	};
 
 /*MOSTRAR DIV OCULTO*/
 
@@ -186,44 +138,65 @@
 
 /*VALIDACIONES CONTACTO*/
 
-const formularioContacto = document.getElementById('formulario');
-const inputsContacto = document.querySelectorAll ('#formulario input textarea');
+const formulario = document.getElementById('formulario');
+const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/, 
-	comentario: /^[a-zA-Z0-9-ZÀ-ÿ\s]{1,40}$/, 
+	telefono: /^\d{7,14}$/
 }
 
-const validarFomulario = (e) => {
+const campos = {
+	Nombre: false,
+	Email: false,
+	Telefono: false
+}
+
+const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "nombre":
-
-			if (expresiones.nombre.test())
-
+			validarCampo(expresiones.nombre, e.target, 'Nombre');
 		break;
-
 		case "email":
-
+			validarCampo(expresiones.email, e.target, 'Email');
 		break;
-
 		case "telefono":
-
-		break;
-
-		case "comentario":
-
+			validarCampo(expresiones.telefono, e.target, 'Telefono');
 		break;
 	}
-
 }
 
-inputsContacto.forEach( (input) => {
-	input.addEventListener('keyup', validarFomulario);
-	input.addEventListener('blur', validarFomulario);
+const validarCampo = (expresion, input, campo) => {
+	if (expresion.test(input.value)){
+		document.getElementById(`divForm${campo}`).classList.remove('divForm-incorrecto');
+		document.getElementById(`divForm${campo}`).classList.add('divForm-correcto');
+		document.querySelector(`#divForm${campo} i`).classList.add('fa-check-circle');
+		document.querySelector(`#divForm${campo} i`).classList.remove('fa-times-circle');
+		document.querySelector(`#divForm${campo} .inputError`).classList.remove('inputError-activo')
+		campos[campo] = true;
+	} else {
+		document.getElementById(`divForm${campo}`).classList.add('divForm-incorrecto');
+		document.getElementById(`divForm${campo}`).classList.remove('divForm-correcto');
+		document.querySelector(`#divForm${campo} i`).classList.add('fa-times-circle');
+		document.querySelector(`#divForm${campo} i`).classList.remove('fa-check-circle');
+		document.querySelector(`#divForm${campo} .inputError`).classList.add('inputError-activo')
+		campos[campo] = false;
+	}
+}
+
+inputs.forEach((input) => {
+	input.addEventListener('keyup', validarFormulario);
+	input.addEventListener('blur', validarFormulario);
 });
 
-formularioContacto.addEventListener ('submit', (e) => {
+formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
+
+	if (campos.Nombre == true && campos.Email == true  && campos.Telefono == true ) {
+		alert("Hemos recibido su mensaje. En breve le responderemos. Gracias");
+		formulario.reset();
+	} else {
+		alert("Por favor complete todos los campos antes de enviar");
+	}
 });

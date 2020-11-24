@@ -160,8 +160,8 @@
 					</ul>
 					<hr>
 				</div>			
-				<form class="formularioContacto" id="formulario">
-					<div class="divForm">
+				<form action="" class="formularioContacto" id="formulario">
+					<div class="divForm" id="divFormNombre">
 						<label for="nombre" form="nombre">Nombre y Apellido:</label>
 						<div class="divInput">
 							<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
@@ -169,7 +169,7 @@
 						</div>
 						<p class="inputError">Ingrese su nombre y apellido.</p>
 					</div>
-					<div class="divForm">
+					<div class="divForm" id="divFormEmail">
 						<label for="email" form="email">Email:</label>
 						<div class="divInput">
 							<input type="email" name="email" id="email" placeholder="nombre@ejemplo.com">
@@ -177,7 +177,7 @@
 						</div>
 						<p class="inputError">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
 					</div>				
-					<div class="divForm" >
+					<div class="divForm" id="divFormTelefono">
 						<label for="telefono" form="telefono">Teléfono:</label>
 						<div class="divInput">
 							<input type="tel"  name="telefono" id="telefono" placeholder="(Código de área) Número">
@@ -185,19 +185,17 @@
 						</div>
 						<p class="inputError">El telefono solo puede contener numeros.</p>
 					</div>
-					<div class="divFormComentario">
-						<label  for="comentario" form="Comentario">Comentarios:</label>
+					<div class="divFormComentario" id="divFormComentario">
+						<label  for="comentario" form="comentario">Comentarios:</label>
 						<div class="divInput">
 							<textarea name="comentario" id="comentario" rows="5"></textarea>
-							<i class="iconoValidacion fas fa-times-circle"></i>
 						</div>
-						<p class="inputError">Por favor rellena el formulario correctamente.</p>
 					</div>	
 					<div class="mensaje">
 						<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Complete todo el formulario antes de enviarlo</p>	
 					</div>			
 					<div class="divButton">
-						<button type="submit" onclick="mensajeEnviado()">Enviar</button>
+						<button type="submit">Enviar</button>
 					</div>
 				</form>
 			</div>

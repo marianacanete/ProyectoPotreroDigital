@@ -9,8 +9,8 @@
 	
 	function recuperacion() {
 
-		var num = document.getElementById("emailRecuperacion").value.indexOf("@");
-		var email = document.getElementById("emailRecuperacion").value;
+		var num = document.getElementById("email").value.indexOf("@");
+		var email = document.getElementById("email").value;
 
 		if (num == -1 ) {
 

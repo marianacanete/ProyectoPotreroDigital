@@ -131,66 +131,162 @@
   font-size: 0.8em;
 }
 
-.fila {
+.divForm {
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.fila label {
+.campo{
+  width:100%;
+}
+
+#campoBanco {
+  width: 20%;
+}
+
+#campoEntidad {
+  width: 20%;
+}
+
+#campoCuotas {
+  width: 20%;
+}
+
+#campoNro {
+  width: 50%;
+}
+
+#campoCod {
+  width: 20%;
+}
+
+#campoVenc {
+  width: 25%;
+}
+
+.divForm label {
+  margin: 0 !important;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.divInput {
+  flex-direction: row;
+  position: relative;
+}
+
+.divInput input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  padding: 4px 0;
+  border: 2px solid  #eaeaea;
+  border-radius: 3px;
+  height: 35px;
+  transition: .3s ease all;
+}
+
+.divInput input:focus {
+  border: 2px solid  #00b5ff;
+  outline: none;
+  box-shadow: 2px 0 30px #a3a3a3;
+}
+
+#venc {
+  flex-direction: row;
+  padding: 0 20px;
+}
+
+#desc {
   width: 30%;
 }
 
-.fila input {
-  width: 70%;
-}
-
-.filaNombre {
-  flex-direction: row;
-  align-self: center;
-  width: 80%;
-}
-
-#nomtitular {
-  width: 100%;
-  align-self: flex-start;
-}
-
-#nomtitular input {
-  width: 96%;
-  font-size: 14px;
-}
-
-.filaNro {
-  flex-direction: row;
-  width: 100%;
-  align-self: space-between;
-}
-
-#numtarj {
-  width: 60%;
-}
-
-#numtarj input {
+#banco, #entidad, #cuotas {
   width: 90%;
-  font-size: 14px;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  padding: 4px 0;
+  border: 2px solid  #eaeaea;
+  border-radius: 3px;
+  height: 35px;
+  transition: .3s ease all;
+  color:grey; 
 }
 
-#cod {
-  width: 40%;
+#banco:focus, #entidad:focus, #cuotas:focus {
+  border: 2px solid  #00b5ff;
+  outline: none;
+  box-shadow: 2px 0 30px #a3a3a3;
 }
 
-#cod input {
-    width: 70%;
+.inputError {
+  font-size: 0.7em;
+  margin: 0;
+  padding-bottom: 10px;
+  display: none;
 }
 
-.filaVenc {
+.inputError-activo {
+  display: inline-block;
+}
+
+.iconoValidacion {
+  position: absolute;
   align-self: center;
-  align-items: center;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  font-size: 0.9em;
+  opacity: 0;
 }
 
-#venc input {
-  flex-direction: row;
-  font-size: 14px;
+.mensaje {
+    justify-content: center;
+    height: 45px;
+    background-color: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.mensaje-activo {
+    display: inline-block;
+}
+
+.mensaje p i {
+    align-self: center;  
+    padding-right: 5px;
+}
+
+.mensaje p {
+    align-self: center;
+    flex-direction: row;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/********VALIDACIONES*************/
+
+.divForm-correcto .iconoValidacion {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.divForm-incorrecto label {
+    color: #bb2929;
+}
+
+.divForm-incorrecto .iconoValidacion {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.divForm-incorrecto input {
+    border: 2px solid #bb2929;
 }
 
 /*rapipago*/
@@ -461,67 +557,164 @@
   font-size: 0.8em;
 }
 
-.fila {
+.divForm {
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.fila label {
+.campo{
+  width:100%;
+}
+
+#campoBanco {
+  width: 20%;
+}
+
+#campoEntidad {
+  width: 20%;
+}
+
+#campoCuotas {
+  width: 20%;
+}
+
+#campoNro {
+  width: 50%;
+}
+
+#campoCod {
+  width: 20%;
+}
+
+#campoVenc {
+  width: 25%;
+}
+
+.divForm label {
+  margin: 0 !important;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.divInput {
+  flex-direction: row;
+  position: relative;
+}
+
+.divInput input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  padding: 4px 0;
+  border: 2px solid  #eaeaea;
+  border-radius: 3px;
+  height: 35px;
+  transition: .3s ease all;
+}
+
+.divInput input:focus {
+  border: 2px solid  #00b5ff;
+  outline: none;
+  box-shadow: 2px 0 30px #a3a3a3;
+}
+
+#venc {
+  flex-direction: row;
+  padding: 0 20px;
+}
+
+#desc {
   width: 30%;
 }
 
-.fila input {
-  width: 70%;
-}
-
-.filaNombre {
-  flex-direction: row;
-  align-self: center;
-  width: 80%;
-}
-
-#nomtitular {
-  width: 100%;
-  align-self: flex-start;
-}
-
-#nomtitular input {
-  width: 96%;
-  font-size: 14px;
-}
-
-.filaNro {
-  flex-direction: row;
-  width: 100%;
-  align-self: space-between;
-}
-
-#numtarj {
-  width: 60%;
-}
-
-#numtarj input {
+#banco, #entidad, #cuotas {
   width: 90%;
-  font-size: 14px;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  padding: 4px 0;
+  border: 2px solid  #eaeaea;
+  border-radius: 3px;
+  height: 35px;
+  transition: .3s ease all;
+  color:grey; 
 }
 
-#cod {
-  width: 40%;
+#banco:focus, #entidad:focus, #cuotas:focus {
+  border: 2px solid  #00b5ff;
+  outline: none;
+  box-shadow: 2px 0 30px #a3a3a3;
 }
 
-#cod input {
-    width: 70%;
+.inputError {
+  font-size: 0.7em;
+  margin: 0;
+  padding-bottom: 10px;
+  display: none;
 }
 
-.filaVenc {
+.inputError-activo {
+  display: inline-block;
+}
+
+.iconoValidacion {
+  position: absolute;
   align-self: center;
-  align-items: center;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  font-size: 0.9em;
+  opacity: 0;
 }
 
-#venc input {
-  flex-direction: row;
-  font-size: 14px;
+.mensaje {
+    justify-content: center;
+    height: 45px;
+    background-color: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
 }
+
+.mensaje-activo {
+    display: inline-block;
+}
+
+.mensaje p i {
+    align-self: center;  
+    padding-right: 5px;
+}
+
+.mensaje p {
+    align-self: center;
+    flex-direction: row;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/********VALIDACIONES*************/
+
+.divForm-correcto .iconoValidacion {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.divForm-incorrecto label {
+    color: #bb2929;
+}
+
+.divForm-incorrecto .iconoValidacion {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.divForm-incorrecto input {
+    border: 2px solid #bb2929;
+}
+
 
 /*rapipago*/
 
@@ -783,63 +976,6 @@
   background-color: #f2f2f2;
 }
 
-.fila {
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.fila label {
-  width: 13%;
-}
-
-.fila input {
-  width: 85%;
-}
-
-.filaNombre {
-  flex-direction: row;
-  align-self: center;
-  width: 80%;
-}
-
-#nomtitular {
-  width: 100%;
-  align-self: flex-start;
-}
-
-#nomtitular input {
-  width: 96%;
-  font-size: 14px;
-}
-
-.filaNro {
-  flex-direction: row;
-  width: 80%;
-  align-self: center;
-}
-
-#numtarj {
-  width: 70%;
-}
-
-#numtarj input {
-  width: 90%;
-  font-size: 14px;
-}
-
-#cod {
-  width: 30%;
-}
-
-.filaVenc {
-  align-self: center;
-}
-
-#venc input {
-  flex-direction: row;
-  font-size: 14px;
-}
-
 /*rapipago*/
 
 .rapiPagoFacil {
@@ -1040,63 +1176,6 @@
   background-color: #f2f2f2;
 }
 
-.fila {
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.fila label {
-  width: 13%;
-}
-
-.fila input {
-  width: 85%;
-}
-
-.filaNombre {
-  flex-direction: row;
-  align-self: center;
-  width: 80%;
-}
-
-#nomtitular {
-  width: 100%;
-  align-self: flex-start;
-}
-
-#nomtitular input {
-  width: 96%;
-  font-size: 14px;
-}
-
-.filaNro {
-  flex-direction: row;
-  width: 80%;
-  align-self: center;
-}
-
-#numtarj {
-  width: 70%;
-}
-
-#numtarj input {
-  width: 90%;
-  font-size: 14px;
-}
-
-#cod {
-  width: 30%;
-}
-
-.filaVenc {
-  align-self: center;
-}
-
-#venc input {
-  flex-direction: row;
-  font-size: 14px;
-}
-
 /*rapipago*/
 
 .rapiPagoFacil {
@@ -1295,64 +1374,6 @@
   padding: 20px;
   background-color: #f2f2f2;
   font-size: 1em;
-}
-
-.fila {
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.fila label {
-  width: 13%;
-}
-
-.fila input {
-  width: 85%;
-}
-
-.filaNombre {
-  flex-direction: row;
-  align-self: center;
-  width: 100%;
-}
-
-#nomtitular {
-  width: 100%;
-  align-self: flex-start;
-}
-
-#nomtitular input {
-  width: 96%;
-  font-size: 14px;
-}
-
-.filaNro {
-  flex-direction: row;
-  width: 100%;
-  align-self: center;
-}
-
-#numtarj {
-  width: 70%;
-}
-
-#numtarj input {
-  width: 90%;
-  font-size: 14px;
-}
-
-#cod {
-  width: 30%;
-}
-
-#cod input {
-    width: 85%;
-    font-size: 14px;
-}
-
-.filaVenc {
-  align-self: center;
-  align-items: none;
 }
 
 /*rapipago*/

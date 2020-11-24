@@ -127,6 +127,11 @@
   width: 100%;
 }
 
+.campos {
+  background-color: #DCDCDC;
+  padding: 10px;
+}
+
 .campo{
   width:50%;
 }
@@ -432,6 +437,11 @@
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #dedede;
+}
+
+.campos {
+  background-color: #DCDCDC;
+  padding: 10px;
 }
 
 .divForm {

@@ -10,48 +10,92 @@
     margin-top: 20px;
     background-color: #DCDCDC;
     height: 100%;
-    width: 60%;
+    width: 50%;
     justify-content: center;
     padding: 20px;
 }
 
 .containerIniciarSesion h3 {
     align-items: center;
-    margin-bottom: 20px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
+    margin:0;
 }
 
 /*Formulario*/
 
-.sesion label {
-    margin: 0;
+.divForm {
+  justify-content: space-between;
+  width: 100%;
 }
 
-.sesion input {
-    margin-bottom: 15px;
-    font-size: 13px;
-    height: 30px;
+.divForm label {
+  margin: 0 !important;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .campo{
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-    font-size: 16px;
+  width:100%;
+  margin-top: 25px;
+}
+
+.divInput {
+  flex-direction: row;
+  position: relative;
+}
+
+.divInput input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  padding: 4px 0;
+  border: 2px solid  #eaeaea;
+  border-radius: 3px;
+  height: 35px;
+  transition: .3s ease all;
+}
+
+.divInput input:focus {
+  border: 2px solid  #00b5ff;
+  outline: none;
+  box-shadow: 2px 0 30px #a3a3a3;
+}
+
+.inputError {
+  font-size: 0.7em;
+  margin: 0;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.inputError-activo {
+  display: inline-block;
+}
+
+.iconoValidacion {
+  position: absolute;
+  align-self: center;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  font-size: 0.9em;
+  opacity: 0;
 }
 
 .contraseña{
     text-align: center;
-    font-size: 13px;
+    font-size: 0.8em;
     margin-top: 10px;
 }
 
 p{
     flex-direction: row;
     justify-content: center;
-    font-size: 15px;
+    font-size: 0.9em;
 }
 
 p a {
@@ -75,6 +119,14 @@ p a {
     font-weight: bold;
     border:none;
     padding: 5px;
+}
+
+#btnIniciarSesion:hover {
+    background-color: #67DDE5;
+}
+
+.botonIniciarSesion a:hover {
+    text-decoration: none;
 }
 
 }
@@ -101,95 +153,85 @@ p a {
 
 .containerIniciarSesion h3 {
     align-items: center;
-    margin-bottom: 20px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
+    margin:0;
 }
 
 /*Formulario*/
 
-.sesion label {
-    margin: 0;
+.divForm {
+  justify-content: space-between;
+  width: 100%;
 }
 
-.sesion input {
-    margin-bottom: 15px;
-    font-size: 13px;
-    height: 30px;
+.divForm label {
+  margin: 0 !important;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .campo{
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-    font-size: 16px;
+  width:100%;
+  margin-top: 25px;
+}
+
+.divInput {
+  flex-direction: row;
+  position: relative;
+}
+
+.divInput input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  padding: 4px 0;
+  border: 2px solid  #eaeaea;
+  border-radius: 3px;
+  height: 35px;
+  transition: .3s ease all;
+}
+
+.divInput input:focus {
+  border: 2px solid  #00b5ff;
+  outline: none;
+  box-shadow: 2px 0 30px #a3a3a3;
+}
+
+.inputError {
+  font-size: 0.7em;
+  margin: 0;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.inputError-activo {
+  display: inline-block;
+}
+
+.iconoValidacion {
+  position: absolute;
+  align-self: center;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  font-size: 0.9em;
+  opacity: 0;
 }
 
 .contraseña{
     text-align: center;
-    font-size: 13px;
+    font-size: 0.8em;
     margin-top: 10px;
 }
 
 p{
     flex-direction: row;
     justify-content: center;
-    font-size: 15px;
-}
-
-p a {
-    margin-left: 5px;
-}
-
-/*Boton Iniciar Sesion*/
-.botonIniciarSesion{
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px 0;
-    width: 100%;
-}
-
-#btnIniciarSesion{
-    height:35px;
-    justify-content: center;
-    color: #f7f7f7;
-    background-color: #11cbd7;
-    border-radius: 6px;
-    font-weight: bold;
-    border:none;
-    padding: 5px;
-}
-
-/*Formulario*/
-
-.sesion label {
-    margin: 0;
-}
-
-.sesion input {
-    margin-bottom: 15px;
-    font-size: 13px;
-    height: 30px;
-}
-
-.campo{
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.contraseña{
-    text-align: center;
-    font-size: 13px;
-    margin-top: 10px;
-}
-
-p{
-    flex-direction: row;
-    justify-content: center;
-    font-size: 15px;
+    font-size: 0.9em;
 }
 
 p a {
@@ -262,7 +304,6 @@ p a {
 
 .containerIniciarSesion h3 {
     align-items: center;
-    margin-bottom: 20px;
 }
 
 

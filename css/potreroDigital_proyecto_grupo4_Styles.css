@@ -122,7 +122,7 @@ body {
     transition: 0.4s;
 }
 
-#btn_Buscador {
+#btn_Buscador, #btn_Buscador2 {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -134,7 +134,7 @@ body {
     background-color: transparent;
 }
 
-#btn_Buscador:hover {
+#btn_Buscador:hover, #btn_Buscador2:hover {
     color: #67DDE5;
 }
 
@@ -486,7 +486,7 @@ body {
     transition: 0.4s;
 }
 
-#btn_Buscador {
+#btn_Buscador, #btn_Buscador2 {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -818,7 +818,7 @@ footer h6 {
     transition: 0.4s;
 }
 
-#btn_Buscador {
+#btn_Buscador, #btn_Buscador2{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -832,7 +832,7 @@ footer h6 {
     background-color: transparent;
 }
 
-#btn_Buscador:hover {
+#btn_Buscador:hover, #btn_Buscador2:hover{
     color: #000000;
 }
 
@@ -1140,7 +1140,7 @@ footer h6 {
     width: 80%;
 }
 
-#btn_Buscador {
+#btn_Buscador, #btn_Buscador2 {
     justify-content: center;
     align-items: center;
     background-color: initial;
@@ -1154,7 +1154,7 @@ footer h6 {
     outline: none;
 }
 
-#btn_Buscador:active {
+#btn_Buscador:hover, #btn_Buscador2:hover {
     background-color: #3a4750;
 
 }
@@ -1394,7 +1394,7 @@ footer h6 {
     width: 80%;
 }
 
-#btn_Buscador {
+#btn_Buscador, #btn_Buscador2 {
     justify-content: center;
     align-items: center;
     background-color: initial;
@@ -1408,7 +1408,7 @@ footer h6 {
     outline: none;
 }
 
-#btn_Buscador:active {
+#btn_Buscador:hover, #btn_Buscador2:hover {
     background-color: #3a4750;
 
 }

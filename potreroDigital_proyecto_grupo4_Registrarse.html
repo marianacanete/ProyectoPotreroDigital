@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/potreroDigital_proyecto_grupo4_Styles.css">
 	<link rel="stylesheet" type="text/css" href="./css/potreroDigital_proyecto_grupo4_Registrarse.css">
 
-<!-- Font Awesome Iconos -->
+	<!-- Font Awesome Iconos -->
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
@@ -137,7 +137,7 @@
 			<h3>CREAR CUENTA</h3>
 			<form class="formularioReg" id="formulario" action="index.html" method="post">
 				<div class="divForm">
-					<div class="campo">
+					<div class="campo" id="divFormNombre">
 						<label for="nombre" form="nombre">Nombre:</label>
 						<div class="divInput">
 							<input type="text" id="nombre" name="nombre" class="campoReg" placeholder="Ej. Juan">
@@ -145,7 +145,7 @@
 						</div>
 						<p class="inputError">Ingrese su nombre.</p>
 					</div>
-					<div class="campo">
+					<div class="campo" id="divFormApellido">
 						<label for="apellido" form="apellido">Apellido:</label>
 						<div class="divInput">
 							<input type="text" id="apellido" name="apellido" class="campoReg" placeholder="Ej. Perez">
@@ -156,7 +156,7 @@
 				</div>
 
 				<div class="divForm">
-					<div class="campo" id="campoEmail">
+					<div class="campo" id="divFormEmail">
 						<label for="email" form="email">Correo Electrónico:</label>
 						<div class="divInput">
 							<input type="email" id="email" name="email" class="campoReg" placeholder="Ej. nombre@ejemplo.com">
@@ -164,7 +164,7 @@
 						</div>
 						<p class="inputError">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
 					</div>
-					<div class="campo" id="campoTel">
+					<div class="campo" id="divFormTelefono">
 						<label for="telefono" form="telefono">Teléfono:</label>
 						<div class="divInput">
 							<input type="tel" id="telefono" name="telefono"  class="campoReg" placeholder="(Código de área) Número">
@@ -175,7 +175,7 @@
 				</div>
 				
 				<div class="divForm">
-					<div class="campo" id="campoDir">
+					<div class="campo" id="divFormDireccion">
 						<label for="direccion" form="direccion">Dirección:</label>
 						<div class="divInput">
 							<input type="text" id="direccion" name="direccion" class="campoReg" placeholder="Ingrese su direccion">
@@ -183,7 +183,7 @@
 						</div>
 						<p class="inputError">Ingrese su dirección.</p>
 					</div>
-			       	<div class="campo" id="campoCP">
+			       	<div class="campo" id="divFormCP">
 						<label for="cp" form="cp">Código Postal:</label>
 						<div class="divInput">
 							<input type="text" id="cp" name="cp" class="campoReg" placeholder="Ingrese su codigo postal">
@@ -194,7 +194,7 @@
 			     </div>
 
 				<div class="divForm">
-					<div class="campo">
+					<div class="campo" id="divFormPassword">
 					<label for="contraseña1" form="contraseña">Contraseña:</label>
 					<div class="divInput">
 						<input type="password" id="contraseña1" name="password" class="campoReg" placeholder="Ingrese su contraseña">
@@ -202,7 +202,7 @@
 					</div>
 					<p class="inputError">Ingrese su contraseña.</p>
 					</div >
-					<div class="campo">
+					<div class="campo" id="divFormPassword">
 					<label for="contraseña2"  form="contraseña">Confirmar Contraseña:</label>
 					<div class="divInput">
 						<input type="password" id="contraseña2" name="password" class="campoReg" placeholder="Ingrese su contraseña nuevamente">
@@ -235,8 +235,8 @@
 			<div class="mensaje">
 				<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Complete todo el formulario antes de enviarlo</p>	
 			</div>		    
-		    <div class="botonRegistrarse">
-		  		<a href="potreroDigital_proyecto_grupo4_MiCuenta.html">
+		    <div class="botonRegistrarse" onclick="registrarse()">
+		  		<a id="vinculo" href="potreroDigital_proyecto_grupo4_MiCuenta.html">
 					  <button type="button" name="button" id="btnRegistro"> REGISTRARSE</button>
 				</a>
 		    </div>

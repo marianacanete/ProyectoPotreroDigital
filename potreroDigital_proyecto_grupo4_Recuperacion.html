@@ -135,19 +135,19 @@
 	<main>
 		<div class="recuperarCuenta">
 			<h3>RECUPERA TU CUENTA</h3>
-			<form class="recuperaTuCuenta" action="index.html" method="post">
+			<form action="" class="recuperaTuCuenta" id="formulario">
 				<p>Vamos a enviarte un email para que puedas cambiar tu contraseña. </p>
-				<div class="campo">
-					<label  for="email">Ingrese su email: </label>
+				<div class="campo" id="divFormEmail">
+					<label  for="email" form="email">Ingrese su email: </label>
 					<div class="divInput">
-						<input id="email" type="text" name="user" placeholder="Ej. nombre@ejemplo.com"> 
+						<input type="email" name="email" id="email" placeholder="Ej. nombre@ejemplo.com">
 						<i class="iconoValidacion fas fa-times-circle"></i>
 					</div>
-					<p class="inputError">Ingrese su email.</p>
+					<p class="inputError">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
 				</div> 	
 			</form>
 			<div class="botonRecuperacion">
-				<button type="button" name="Iniciar" id="btnRecuperacion" onclick="recuperacion()">Enviar Email</button>
+				<button type="submit" id="btnRecuperacion" onclick="recibido()">Enviar Email</button>
 			</div>
 		</div>
 	</main>

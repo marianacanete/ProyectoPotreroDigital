@@ -19,20 +19,6 @@
 		}
 	};
 
-/*INICIAR SESION*/
-
-	function inicioSesion() {
-
-		var num = document.getElementById("email").value.indexOf("@");
-		var email = document.getElementById("email").value;
-		
-		if (num == -1 ) {
-			alert("Ingresa tu e-mail");
-		} else {
-			alert ("Inicia Sesion");		
-		}
-	};
-
 /*MOSTRAR CARTEL AL SUSCRIBIRSE*/
 
 	function suscribite() {
@@ -143,14 +129,20 @@ const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+	apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+	direccion: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+	cp: /^\d{4,6}$/,
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/
+	telefono: /^\d{7,14}$/,
+	password: /^.{4,12}$/ // 4 a 12 digitos.
 }
 
 const campos = {
 	Nombre: false,
+	Apellido: false,
 	Email: false,
-	Telefono: false
+	Telefono: false,
+	Password: false
 }
 
 const validarFormulario = (e) => {
@@ -200,3 +192,162 @@ formulario.addEventListener('submit', (e) => {
 		alert("Por favor complete todos los campos antes de enviar");
 	}
 });
+
+/*VALIDACIONES RECUPERACION*/
+
+const formularioRec = document.getElementById('formulario');
+const inputsRec = document.querySelectorAll('#formulario input');
+
+const validarFormularioRec = (e) => {
+	switch (e.target.name) {
+		case "email":
+			validarCampoRec(expresiones.email, e.target, 'Email');
+		break;
+	}
+}
+
+const validarCampoRec = (expresion, input, campo) => {
+	if (expresion.test(input.value)){
+		document.getElementById(`divForm${campo}`).classList.remove('campo-incorrecto');
+		document.getElementById(`divForm${campo}`).classList.add('campo-correcto');
+		document.querySelector(`#divForm${campo} i`).classList.add('fa-check-circle');
+		document.querySelector(`#divForm${campo} i`).classList.remove('fa-times-circle');
+		document.querySelector(`#divForm${campo} .inputError`).classList.remove('inputError-activo')
+		campos[campo] = true;
+	} else {
+		document.getElementById(`divForm${campo}`).classList.add('campo-incorrecto');
+		document.getElementById(`divForm${campo}`).classList.remove('campo-correcto');
+		document.querySelector(`#divForm${campo} i`).classList.add('fa-times-circle');
+		document.querySelector(`#divForm${campo} i`).classList.remove('fa-check-circle');
+		document.querySelector(`#divForm${campo} .inputError`).classList.add('inputError-activo')
+		campos[campo] = false;
+	}
+}
+
+inputsRec.forEach((input) => {
+	input.addEventListener('keyup', validarFormularioRec);
+	input.addEventListener('blur', validarFormularioRec);
+});
+
+function recibido() {
+	if (campos.Email == true) {
+		alert("Hemos recibido su mensaje. En breve le responderemos. Gracias");
+		formularioRec.reset();
+	} else {
+		alert("Por favor complete todos los campos antes de enviar");
+	}
+};
+
+/*VALIDACIONES INICIO SESION*/
+
+const formularioInicio = document.getElementById('formulario');
+const inputsInicio = document.querySelectorAll('#formulario input');
+
+const validarFormularioInicio = (e) => {
+	switch (e.target.name) {
+		case "email":
+			validarCampoInicio(expresiones.email, e.target, 'Email');
+		break;
+		case "password":
+			validarCampoInicio(expresiones.telefono, e.target, 'Password');
+		break;
+	}
+}
+
+const validarCampoInicio = (expresion, input, campo) => {
+	if (expresion.test(input.value)){
+		document.getElementById(`divForm${campo}`).classList.remove('campo-incorrecto');
+		document.getElementById(`divForm${campo}`).classList.add('campo-correcto');
+		document.querySelector(`#divForm${campo} i`).classList.add('fa-check-circle');
+		document.querySelector(`#divForm${campo} i`).classList.remove('fa-times-circle');
+		document.querySelector(`#divForm${campo} .inputError`).classList.remove('inputError-activo')
+		campos[campo] = true;
+	} else {
+		document.getElementById(`divForm${campo}`).classList.add('campo-incorrecto');
+		document.getElementById(`divForm${campo}`).classList.remove('campo-correcto');
+		document.querySelector(`#divForm${campo} i`).classList.add('fa-times-circle');
+		document.querySelector(`#divForm${campo} i`).classList.remove('fa-check-circle');
+		document.querySelector(`#divForm${campo} .inputError`).classList.add('inputError-activo')
+		campos[campo] = false;
+	}
+}
+
+inputsInicio.forEach((input) => {
+	input.addEventListener('keyup', validarFormularioInicio);
+	input.addEventListener('blur', validarFormularioInicio);
+});
+
+function iniciarSesion() {
+	var email = document.getElementById("email").value;
+	if (campos.Email == true && campos.Password == true) {
+		alert("Bienvenido " + email);
+		formularioRec.reset();
+	} else {
+		alert("Por favor complete sus datos correctamente");
+	}
+};
+
+/*VALIDACIONES REGISTRARSE*/
+
+const formularioReg = document.getElementById('formulario');
+const inputsReg = document.querySelectorAll('#formulario input');
+
+const validarFormularioReg = (e) => {
+	switch (e.target.name) {
+		case "nombre":
+			validarCampoReg(expresiones.nombre, e.target, 'Nombre');
+		break;
+		case "apellido":
+			validarCampoReg(expresiones.apellido, e.target, 'Apellido');
+		break;
+		case "email":
+			validarCampoReg(expresiones.email, e.target, 'Email');
+		break;
+		case "telefono":
+			validarCampoReg(expresiones.telefono, e.target, 'Telefono');
+		break;
+		case "direccion":
+			validarCampoReg(expresiones.direccion, e.target, 'Direccion');
+		break;
+		case "cp":
+			validarCampoReg(expresiones.cp, e.target, 'CP');
+		break;
+		case "password":
+			validarCampoReg(expresiones.password, e.target, 'Password');
+		break;
+	}
+}
+
+const validarCampoReg = (expresion, input, campo) => {
+	if (expresion.test(input.value)){
+		document.getElementById(`divForm${campo}`).classList.remove('campo-incorrecto');
+		document.getElementById(`divForm${campo}`).classList.add('campo-correcto');
+		document.querySelector(`#divForm${campo} i`).classList.add('fa-check-circle');
+		document.querySelector(`#divForm${campo} i`).classList.remove('fa-times-circle');
+		document.querySelector(`#divForm${campo} .inputError`).classList.remove('inputError-activo')
+		campos[campo] = true;
+	} else {
+		document.getElementById(`divForm${campo}`).classList.add('campo-incorrecto');
+		document.getElementById(`divForm${campo}`).classList.remove('campo-correcto');
+		document.querySelector(`#divForm${campo} i`).classList.add('fa-times-circle');
+		document.querySelector(`#divForm${campo} i`).classList.remove('fa-check-circle');
+		document.querySelector(`#divForm${campo} .inputError`).classList.add('inputError-activo')
+		campos[campo] = false;
+	}
+}
+
+inputsReg.forEach((input) => {
+	input.addEventListener('keyup', validarFormularioReg);
+	input.addEventListener('blur', validarFormularioReg);
+});
+
+function registrarse() {
+	var vinculo = document.getElementById("vinculo").value;
+	if (campos.Nombre == true && campos.Apellido == true && campos.Email == true && campos.Telefono == true && campos.Direccion == true && campos.CP == true ) {
+		alert("Gracias por registrarte");
+		formularioReg.reset();
+	} else {
+		alert("Por favor complete sus datos correctamente");
+		document.getElementById('vinculo').href="potreroDigital_proyecto_grupo4_Registrarse.html";
+	}
+};

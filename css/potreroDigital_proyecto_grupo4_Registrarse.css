@@ -267,19 +267,19 @@ hr {
     width:50%;
 }
 
-#campoEmail {
+#divFormEmail {
     width: 60%;
 }
 
-#campoTel {
+#divFormTelefono {
     width: 40%;
 }
 
-#campoDir {
+#divFormDireccion {
     width: 70%;
 }
 
-#campoCP {
+#divFormCP {
     width: 30%;
 }
 
@@ -359,25 +359,22 @@ hr {
     font-size: 0.9em;
 }
 
-}
-
 /********VALIDACIONES*************/
 
-.divForm-correcto .iconoValidacion {
+.campo-correcto .iconoValidacion {
     color: #1ed12d;
     opacity: 1;
 }
-
-.divForm-incorrecto label {
+.campo-incorrecto label {
     color: #bb2929;
 }
 
-.divForm-incorrecto .iconoValidacion {
+.campo-incorrecto .iconoValidacion {
     color: #bb2929;
     opacity: 1;
 }
 
-.divForm-incorrecto input {
+.campo-incorrecto input {
     border: 2px solid #bb2929;
 }
 

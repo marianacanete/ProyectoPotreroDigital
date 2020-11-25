@@ -58,7 +58,7 @@ body {
     justify-content: center;
 }
 
-.menuIconos ul {
+.divMenuIconos {
     flex-direction: row;
     justify-content: flex-end;
     margin: 0; 
@@ -84,7 +84,7 @@ body {
 
 /*carrito*/
 
-#carrito {
+#carrito, #carrito2 {
     margin: 0 10px;
     height: 100%;
     text-decoration: none;
@@ -92,7 +92,7 @@ body {
     justify-content: center;  
 }
 
-#carrito:hover {
+#carrito:hover, #carrito2:hover  {
     color: #67DDE5;
 }
 
@@ -422,7 +422,7 @@ body {
     justify-content: center;
 }
 
-.menuIconos ul {
+.divMenuIconos  {
     flex-direction: row;
     justify-content: flex-end;
     margin: 0; 
@@ -448,7 +448,7 @@ body {
 
 /*carrito*/
 
-#carrito {
+#carrito, #carrito2 {
     margin: 0 10px;
     height: 100%;
     text-decoration: none;
@@ -456,7 +456,7 @@ body {
     justify-content: center;  
 }
 
-#carrito:hover {
+#carrito:hover, #carrito2:hover {
     color: #67DDE5;
 }
 
@@ -758,7 +758,7 @@ footer h6 {
 
 }
 
-.menuIconos ul {
+.divMenuIconos  {
     flex-direction: row;
     justify-content: flex-end;
     margin: 0; 
@@ -780,7 +780,7 @@ footer h6 {
 
 /*carrito*/
 
-#carrito {
+#carrito, #carrito2 {
     margin: 0 10px;
     height: 100%;
     text-decoration: none;
@@ -788,7 +788,7 @@ footer h6 {
     justify-content: center;  
 }
 
-#carrito:hover {
+#carrito:hover, #carrito2:hover  {
     color: #67DDE5;
 }
 
@@ -1110,7 +1110,7 @@ footer h6 {
 
 /*carrito*/
 
-#carrito {    
+#carrito, #carrito2 {    
     height: 50%;
 }
 
@@ -1364,7 +1364,7 @@ footer h6 {
 
 /*carrito*/
 
-#carrito {    
+#carrito, #carrito2  {    
     height: 50%;
 }
 

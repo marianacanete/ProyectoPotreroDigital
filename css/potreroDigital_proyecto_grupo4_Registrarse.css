@@ -185,7 +185,7 @@ hr {
     margin-top: 30px;
 }
 
-#btnRegistro{
+#btnRegistro {
     height: 33px;
     justify-content: center;
     color: #f7f7f7;
@@ -433,7 +433,7 @@ hr {
     margin-top: 30px;
 }
 
-#btnRegistro{
+#btnRegistro {
     height: 33px;
     justify-content: center;
     color: #f7f7f7;
@@ -443,6 +443,7 @@ hr {
     border:none;
     padding: 5px;
     font-size: 0.9em;
+    text-decoration:none;
 }
 
 #btnRegistro:hover {

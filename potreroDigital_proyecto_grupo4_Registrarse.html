@@ -138,7 +138,7 @@
 			<form class="formularioReg" id="formulario" action="index.html" method="post">
 				<div class="divForm">
 					<div class="campo" id="divFormNombre">
-						<label for="nombre" form="nombre">Nombre:</label>
+						<label for="nombre" >Nombre:</label>
 						<div class="divInput">
 							<input type="text" id="nombre" name="nombre" class="campoReg" placeholder="Ej. Juan">
 							<i class="iconoValidacion fas fa-times-circle"></i>
@@ -146,7 +146,7 @@
 						<p class="inputError">Ingrese su nombre.</p>
 					</div>
 					<div class="campo" id="divFormApellido">
-						<label for="apellido" form="apellido">Apellido:</label>
+						<label for="apellido" >Apellido:</label>
 						<div class="divInput">
 							<input type="text" id="apellido" name="apellido" class="campoReg" placeholder="Ej. Perez">
 							<i class="iconoValidacion fas fa-times-circle"></i>
@@ -157,7 +157,7 @@
 
 				<div class="divForm">
 					<div class="campo" id="divFormEmail">
-						<label for="email" form="email">Correo Electrónico:</label>
+						<label for="email" >Correo Electrónico:</label>
 						<div class="divInput">
 							<input type="email" id="email" name="email" class="campoReg" placeholder="Ej. nombre@ejemplo.com">
 							<i class="iconoValidacion fas fa-times-circle"></i>
@@ -165,7 +165,7 @@
 						<p class="inputError">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
 					</div>
 					<div class="campo" id="divFormTelefono">
-						<label for="telefono" form="telefono">Teléfono:</label>
+						<label for="telefono" >Teléfono:</label>
 						<div class="divInput">
 							<input type="tel" id="telefono" name="telefono"  class="campoReg" placeholder="(Código de área) Número">
 							<i class="iconoValidacion fas fa-times-circle"></i>
@@ -176,7 +176,7 @@
 				
 				<div class="divForm">
 					<div class="campo" id="divFormDireccion">
-						<label for="direccion" form="direccion">Dirección:</label>
+						<label for="direccion" >Dirección:</label>
 						<div class="divInput">
 							<input type="text" id="direccion" name="direccion" class="campoReg" placeholder="Ingrese su direccion">
 							<i class="iconoValidacion fas fa-times-circle"></i>
@@ -184,7 +184,7 @@
 						<p class="inputError">Ingrese su dirección.</p>
 					</div>
 			       	<div class="campo" id="divFormCP">
-						<label for="cp" form="cp">Código Postal:</label>
+						<label for="cp" >Código Postal:</label>
 						<div class="divInput">
 							<input type="text" id="cp" name="cp" class="campoReg" placeholder="Ingrese su codigo postal">
 							<i class="iconoValidacion fas fa-times-circle"></i>
@@ -195,15 +195,15 @@
 
 				<div class="divForm">
 					<div class="campo" id="divFormPassword">
-					<label for="contraseña1" form="contraseña">Contraseña:</label>
+					<label for="contraseña1" >Contraseña:</label>
 					<div class="divInput">
 						<input type="password" id="contraseña1" name="password" class="campoReg" placeholder="Ingrese su contraseña">
 						<i class="iconoValidacion fas fa-times-circle"></i>
 					</div>
 					<p class="inputError">Ingrese su contraseña.</p>
 					</div >
-					<div class="campo" id="divFormPassword">
-					<label for="contraseña2"  form="contraseña">Confirmar Contraseña:</label>
+					<div class="campo" id="divFormPassword2">
+					<label for="contraseña2"  >Confirmar Contraseña:</label>
 					<div class="divInput">
 						<input type="password" id="contraseña2" name="password" class="campoReg" placeholder="Ingrese su contraseña nuevamente">
 						<i class="iconoValidacion fas fa-times-circle"></i>
@@ -225,7 +225,7 @@
 				<hr>
 				<div class="divCheck2">
 					<label> 
-						<input type="checkbox" id="cbox1" value="first_checkbox">
+						<input type="checkbox" id="cbox3" value="first_checkbox">
 					</label>
 					<h5 >He leido y acepto los 
 						<a href="potreroDigital_proyecto_grupo4_TerminosCondiciones.html" target="_blank">"Terminos y Condiciones"</a>	acerca del uso del servicio
@@ -236,9 +236,7 @@
 				<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Complete todo el formulario antes de enviarlo</p>	
 			</div>		    
 		    <div class="botonRegistrarse" onclick="registrarse()">
-		  		<a id="vinculo" href="potreroDigital_proyecto_grupo4_MiCuenta.html">
-					  <button type="button" name="button" id="btnRegistro"> REGISTRARSE</button>
-				</a>
+		  		<a class="btn" type="submit" id="btnRegistro" href="potreroDigital_proyecto_grupo4_MiCuenta.html"> REGISTRARSE</a>
 		    </div>
 			<div class="inicioSesion">
 		   		<p >¿Ya tenés una cuenta? </p> 
